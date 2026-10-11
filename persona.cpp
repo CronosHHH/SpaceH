@@ -10,7 +10,7 @@ public:
 
     // Método (acción)
     void saludar() {
-        std::cout << "Hola, me llamo " << nombre << " y tengo " << edad << " años." << std::endl
+        std::cout << "Hola, me llamo " << nombre << " y tengo " << edad << " años." << std::endl;
     }
 };
 
@@ -23,7 +23,7 @@ int main() {
     persona1.edad = 20;
 
     // Llamada al método
-    persona1.saludar()
+    persona1.saludar();
 
     return 0;
 }
