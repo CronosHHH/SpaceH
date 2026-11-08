@@ -1,0 +1,12 @@
+<PAMDataset>
+  <PAMRasterBand band="1">
+    <Description>Daily mean surface solar irradiance</Description>
+    <Metadata>
+      <MDI key="STATISTICS_MINIMUM">0</MDI>
+      <MDI key="STATISTICS_MAXIMUM">142.86712646484</MDI>
+      <MDI key="STATISTICS_MEAN">92.127324937118</MDI>
+      <MDI key="STATISTICS_STDDEV">44.089024467512</MDI>
+      <MDI key="STATISTICS_VALID_PERCENT">100</MDI>
+    </Metadata>
+  </PAMRasterBand>
+</PAMDataset>

@@ -1,2 +1,6 @@
 *.o
 /env 
+.venv
+.codex
+.agents
+.vscode
