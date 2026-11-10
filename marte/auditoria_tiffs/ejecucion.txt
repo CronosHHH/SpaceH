@@ -1,0 +1,107 @@
+PASS inventario: seis_TIFF_esperados 
+Leyendo todos los píxeles: 1-Mars_MGS_MOLA_DEM_mosaic_global_463m.tif
+PASS 1-Mars_MGS_MOLA_DEM_mosaic_global_463m.tif: una_banda 
+PASS 1-Mars_MGS_MOLA_DEM_mosaic_global_463m.tif: CRS_marciano 
+PASS 1-Mars_MGS_MOLA_DEM_mosaic_global_463m.tif: norte_arriba 
+PASS 1-Mars_MGS_MOLA_DEM_mosaic_global_463m.tif: lectura_completa_y_valores_finitos 
+PASS 1-Mars_MGS_MOLA_DEM_mosaic_global_463m.tif: dimensiones_MOLA_128ppd 
+PASS 1-Mars_MGS_MOLA_DEM_mosaic_global_463m.tif: rango_plausible_elevacion_m rango_m=[-8201.0, 21241.0]
+WARN 1-Mars_MGS_MOLA_DEM_mosaic_global_463m.tif: coincidencia_exacta_malla_nominal_USGS pixel_real=463.0935415504, nominal=463.0835744008, exceso_borde_X_m=229.643125
+PASS 1-Mars_MGS_MOLA_DEM_mosaic_global_463m.tif: PNG_existe 
+PASS 1-Mars_MGS_MOLA_DEM_mosaic_global_463m.tif: PNG_no_uniforme 
+Leyendo todos los píxeles: GHI_marte.tif
+PASS GHI_marte.tif: una_banda 
+PASS GHI_marte.tif: CRS_marciano 
+PASS GHI_marte.tif: norte_arriba 
+PASS GHI_marte.tif: lectura_completa_y_valores_finitos 
+PASS GHI_marte.tif: malla_GHI_1_grado 
+PASS GHI_marte.tif: rango_fisico_modelo 
+PASS GHI_marte.tif: integracion_independiente_sol error_max_Wm2=0.000212079721
+PASS GHI_marte.tif: media_global_S_sobre_4 media_Wm2=110.624026
+PASS GHI_marte.tif: constancia_longitudinal_modelo 
+PASS GHI_marte.tif: unidades_y_estacion 
+PASS GHI_marte.tif: PNG_existe 
+PASS GHI_marte.tif: PNG_no_uniforme 
+Leyendo todos los píxeles: olivine_osp1_equ_map.tiff
+PASS olivine_osp1_equ_map.tiff: una_banda 
+PASS olivine_osp1_equ_map.tiff: CRS_marciano 
+PASS olivine_osp1_equ_map.tiff: norte_arriba 
+PASS olivine_osp1_equ_map.tiff: dimensiones_PDS 
+PASS olivine_osp1_equ_map.tiff: formato_PDS 
+PASS olivine_osp1_equ_map.tiff: bytes_IMG 
+PASS olivine_osp1_equ_map.tiff: NoData_PDS 
+PASS olivine_osp1_equ_map.tiff: valores_fisicos_sin_doble_escala 
+PASS olivine_osp1_equ_map.tiff: lectura_completa_y_valores_finitos 
+PASS olivine_osp1_equ_map.tiff: mascara_igual_al_IMG diferencias=0
+PASS olivine_osp1_equ_map.tiff: escala_igual_al_IMG error_max=0
+PASS olivine_osp1_equ_map.tiff: rango_publicado_PDS observado=[1.03999996, 1.33249855], etiqueta=[1.04, 1.332]
+PASS olivine_osp1_equ_map.tiff: resolucion_PDS 
+PASS olivine_osp1_equ_map.tiff: centro_global_coherente_con_etiqueta centro_m=[0.0, 0.0]; esperado=[0,0]
+PASS olivine_osp1_equ_map.tiff: media_coherente_con_PDS 
+PASS olivine_osp1_equ_map.tiff: desviacion_coherente_con_PDS 
+PASS olivine_osp1_equ_map.tiff: opciones_PDS_corrigen_centro_en_memoria 
+PASS olivine_osp1_equ_map.tiff: PNG_existe 
+PASS olivine_osp1_equ_map.tiff: PNG_no_uniforme 
+Leyendo todos los píxeles: olivine_osp2_equ_map.tiff
+PASS olivine_osp2_equ_map.tiff: una_banda 
+PASS olivine_osp2_equ_map.tiff: CRS_marciano 
+PASS olivine_osp2_equ_map.tiff: norte_arriba 
+PASS olivine_osp2_equ_map.tiff: dimensiones_PDS 
+PASS olivine_osp2_equ_map.tiff: formato_PDS 
+PASS olivine_osp2_equ_map.tiff: bytes_IMG 
+PASS olivine_osp2_equ_map.tiff: NoData_PDS 
+PASS olivine_osp2_equ_map.tiff: valores_fisicos_sin_doble_escala 
+PASS olivine_osp2_equ_map.tiff: lectura_completa_y_valores_finitos 
+PASS olivine_osp2_equ_map.tiff: mascara_igual_al_IMG diferencias=0
+PASS olivine_osp2_equ_map.tiff: escala_igual_al_IMG error_max=0
+PASS olivine_osp2_equ_map.tiff: rango_publicado_PDS observado=[1.04000354, 1.32886946], etiqueta=[1.04, 1.329]
+PASS olivine_osp2_equ_map.tiff: resolucion_PDS 
+PASS olivine_osp2_equ_map.tiff: centro_global_coherente_con_etiqueta centro_m=[0.0, 0.0]; esperado=[0,0]
+PASS olivine_osp2_equ_map.tiff: media_coherente_con_PDS 
+PASS olivine_osp2_equ_map.tiff: desviacion_coherente_con_PDS 
+PASS olivine_osp2_equ_map.tiff: opciones_PDS_corrigen_centro_en_memoria 
+PASS olivine_osp2_equ_map.tiff: PNG_existe 
+PASS olivine_osp2_equ_map.tiff: PNG_no_uniforme 
+Leyendo todos los píxeles: olivine_osp3_equ_map.tiff
+PASS olivine_osp3_equ_map.tiff: una_banda 
+PASS olivine_osp3_equ_map.tiff: CRS_marciano 
+PASS olivine_osp3_equ_map.tiff: norte_arriba 
+PASS olivine_osp3_equ_map.tiff: dimensiones_PDS 
+PASS olivine_osp3_equ_map.tiff: formato_PDS 
+PASS olivine_osp3_equ_map.tiff: bytes_IMG 
+PASS olivine_osp3_equ_map.tiff: NoData_PDS 
+PASS olivine_osp3_equ_map.tiff: valores_fisicos_sin_doble_escala 
+PASS olivine_osp3_equ_map.tiff: lectura_completa_y_valores_finitos 
+PASS olivine_osp3_equ_map.tiff: mascara_igual_al_IMG diferencias=0
+PASS olivine_osp3_equ_map.tiff: escala_igual_al_IMG error_max=0
+PASS olivine_osp3_equ_map.tiff: rango_publicado_PDS observado=[0.831067502, 1.0255059], etiqueta=[0.831, 1.026]
+PASS olivine_osp3_equ_map.tiff: resolucion_PDS 
+PASS olivine_osp3_equ_map.tiff: centro_global_coherente_con_etiqueta centro_m=[0.0, 0.0]; esperado=[0,0]
+PASS olivine_osp3_equ_map.tiff: media_coherente_con_PDS 
+PASS olivine_osp3_equ_map.tiff: desviacion_coherente_con_PDS 
+PASS olivine_osp3_equ_map.tiff: opciones_PDS_corrigen_centro_en_memoria 
+PASS olivine_osp3_equ_map.tiff: PNG_existe 
+PASS olivine_osp3_equ_map.tiff: PNG_no_uniforme 
+Leyendo todos los píxeles: pyroxene_bd2000_equ_map.tiff
+PASS pyroxene_bd2000_equ_map.tiff: una_banda 
+PASS pyroxene_bd2000_equ_map.tiff: CRS_marciano 
+PASS pyroxene_bd2000_equ_map.tiff: norte_arriba 
+PASS pyroxene_bd2000_equ_map.tiff: dimensiones_PDS 
+PASS pyroxene_bd2000_equ_map.tiff: formato_PDS 
+PASS pyroxene_bd2000_equ_map.tiff: bytes_IMG 
+PASS pyroxene_bd2000_equ_map.tiff: NoData_PDS 
+PASS pyroxene_bd2000_equ_map.tiff: valores_fisicos_sin_doble_escala 
+PASS pyroxene_bd2000_equ_map.tiff: lectura_completa_y_valores_finitos 
+PASS pyroxene_bd2000_equ_map.tiff: mascara_igual_al_IMG diferencias=0
+PASS pyroxene_bd2000_equ_map.tiff: escala_igual_al_IMG error_max=0
+PASS pyroxene_bd2000_equ_map.tiff: rango_publicado_PDS observado=[0.0100000501, 0.109973013], etiqueta=[0.01, 0.11]
+PASS pyroxene_bd2000_equ_map.tiff: resolucion_PDS 
+PASS pyroxene_bd2000_equ_map.tiff: centro_global_coherente_con_etiqueta centro_m=[0.0, 0.0]; esperado=[0,0]
+PASS pyroxene_bd2000_equ_map.tiff: media_coherente_con_PDS 
+PASS pyroxene_bd2000_equ_map.tiff: desviacion_coherente_con_PDS 
+PASS pyroxene_bd2000_equ_map.tiff: opciones_PDS_corrigen_centro_en_memoria 
+PASS pyroxene_bd2000_equ_map.tiff: PNG_existe 
+PASS pyroxene_bd2000_equ_map.tiff: PNG_no_uniforme 
+PASS minerales: misma_malla_entre_4 
+
+98/99 PASS; 0 FAIL; 1 WARN. Informe: /home/renato/Desktop/HSpace/marte/auditoria_tiffs/resultados.json

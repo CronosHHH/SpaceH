@@ -1,0 +1,1022 @@
+{
+  "fecha_UTC": "2026-11-09T11:31:40.157545+00:00",
+  "GDAL": "3120200",
+  "metodo": "Lectura completa por bloques. IMG por memmap independiente de GDAL. Sin estadísticas caché.",
+  "tests": [
+    {
+      "archivo": "inventario",
+      "test": "seis_TIFF_esperados",
+      "ok": true,
+      "estado": "PASS",
+      "detalle": ""
+    },
+    {
+      "archivo": "1-Mars_MGS_MOLA_DEM_mosaic_global_463m.tif",
+      "test": "una_banda",
+      "ok": true,
+      "estado": "PASS",
+      "detalle": ""
+    },
+    {
+      "archivo": "1-Mars_MGS_MOLA_DEM_mosaic_global_463m.tif",
+      "test": "CRS_marciano",
+      "ok": true,
+      "estado": "PASS",
+      "detalle": ""
+    },
+    {
+      "archivo": "1-Mars_MGS_MOLA_DEM_mosaic_global_463m.tif",
+      "test": "norte_arriba",
+      "ok": true,
+      "estado": "PASS",
+      "detalle": ""
+    },
+    {
+      "archivo": "1-Mars_MGS_MOLA_DEM_mosaic_global_463m.tif",
+      "test": "lectura_completa_y_valores_finitos",
+      "ok": true,
+      "estado": "PASS",
+      "detalle": ""
+    },
+    {
+      "archivo": "1-Mars_MGS_MOLA_DEM_mosaic_global_463m.tif",
+      "test": "dimensiones_MOLA_128ppd",
+      "ok": true,
+      "estado": "PASS",
+      "detalle": ""
+    },
+    {
+      "archivo": "1-Mars_MGS_MOLA_DEM_mosaic_global_463m.tif",
+      "test": "rango_plausible_elevacion_m",
+      "ok": true,
+      "estado": "PASS",
+      "detalle": "rango_m=[-8201.0, 21241.0]"
+    },
+    {
+      "archivo": "1-Mars_MGS_MOLA_DEM_mosaic_global_463m.tif",
+      "test": "coincidencia_exacta_malla_nominal_USGS",
+      "ok": false,
+      "estado": "WARN",
+      "detalle": "pixel_real=463.0935415504, nominal=463.0835744008, exceso_borde_X_m=229.643125"
+    },
+    {
+      "archivo": "1-Mars_MGS_MOLA_DEM_mosaic_global_463m.tif",
+      "test": "PNG_existe",
+      "ok": true,
+      "estado": "PASS",
+      "detalle": ""
+    },
+    {
+      "archivo": "1-Mars_MGS_MOLA_DEM_mosaic_global_463m.tif",
+      "test": "PNG_no_uniforme",
+      "ok": true,
+      "estado": "PASS",
+      "detalle": ""
+    },
+    {
+      "archivo": "GHI_marte.tif",
+      "test": "una_banda",
+      "ok": true,
+      "estado": "PASS",
+      "detalle": ""
+    },
+    {
+      "archivo": "GHI_marte.tif",
+      "test": "CRS_marciano",
+      "ok": true,
+      "estado": "PASS",
+      "detalle": ""
+    },
+    {
+      "archivo": "GHI_marte.tif",
+      "test": "norte_arriba",
+      "ok": true,
+      "estado": "PASS",
+      "detalle": ""
+    },
+    {
+      "archivo": "GHI_marte.tif",
+      "test": "lectura_completa_y_valores_finitos",
+      "ok": true,
+      "estado": "PASS",
+      "detalle": ""
+    },
+    {
+      "archivo": "GHI_marte.tif",
+      "test": "malla_GHI_1_grado",
+      "ok": true,
+      "estado": "PASS",
+      "detalle": ""
+    },
+    {
+      "archivo": "GHI_marte.tif",
+      "test": "rango_fisico_modelo",
+      "ok": true,
+      "estado": "PASS",
+      "detalle": ""
+    },
+    {
+      "archivo": "GHI_marte.tif",
+      "test": "integracion_independiente_sol",
+      "ok": true,
+      "estado": "PASS",
+      "detalle": "error_max_Wm2=0.000212079721"
+    },
+    {
+      "archivo": "GHI_marte.tif",
+      "test": "media_global_S_sobre_4",
+      "ok": true,
+      "estado": "PASS",
+      "detalle": "media_Wm2=110.624026"
+    },
+    {
+      "archivo": "GHI_marte.tif",
+      "test": "constancia_longitudinal_modelo",
+      "ok": true,
+      "estado": "PASS",
+      "detalle": ""
+    },
+    {
+      "archivo": "GHI_marte.tif",
+      "test": "unidades_y_estacion",
+      "ok": true,
+      "estado": "PASS",
+      "detalle": ""
+    },
+    {
+      "archivo": "GHI_marte.tif",
+      "test": "PNG_existe",
+      "ok": true,
+      "estado": "PASS",
+      "detalle": ""
+    },
+    {
+      "archivo": "GHI_marte.tif",
+      "test": "PNG_no_uniforme",
+      "ok": true,
+      "estado": "PASS",
+      "detalle": ""
+    },
+    {
+      "archivo": "olivine_osp1_equ_map.tiff",
+      "test": "una_banda",
+      "ok": true,
+      "estado": "PASS",
+      "detalle": ""
+    },
+    {
+      "archivo": "olivine_osp1_equ_map.tiff",
+      "test": "CRS_marciano",
+      "ok": true,
+      "estado": "PASS",
+      "detalle": ""
+    },
+    {
+      "archivo": "olivine_osp1_equ_map.tiff",
+      "test": "norte_arriba",
+      "ok": true,
+      "estado": "PASS",
+      "detalle": ""
+    },
+    {
+      "archivo": "olivine_osp1_equ_map.tiff",
+      "test": "dimensiones_PDS",
+      "ok": true,
+      "estado": "PASS",
+      "detalle": ""
+    },
+    {
+      "archivo": "olivine_osp1_equ_map.tiff",
+      "test": "formato_PDS",
+      "ok": true,
+      "estado": "PASS",
+      "detalle": ""
+    },
+    {
+      "archivo": "olivine_osp1_equ_map.tiff",
+      "test": "bytes_IMG",
+      "ok": true,
+      "estado": "PASS",
+      "detalle": ""
+    },
+    {
+      "archivo": "olivine_osp1_equ_map.tiff",
+      "test": "NoData_PDS",
+      "ok": true,
+      "estado": "PASS",
+      "detalle": ""
+    },
+    {
+      "archivo": "olivine_osp1_equ_map.tiff",
+      "test": "valores_fisicos_sin_doble_escala",
+      "ok": true,
+      "estado": "PASS",
+      "detalle": ""
+    },
+    {
+      "archivo": "olivine_osp1_equ_map.tiff",
+      "test": "lectura_completa_y_valores_finitos",
+      "ok": true,
+      "estado": "PASS",
+      "detalle": ""
+    },
+    {
+      "archivo": "olivine_osp1_equ_map.tiff",
+      "test": "mascara_igual_al_IMG",
+      "ok": true,
+      "estado": "PASS",
+      "detalle": "diferencias=0"
+    },
+    {
+      "archivo": "olivine_osp1_equ_map.tiff",
+      "test": "escala_igual_al_IMG",
+      "ok": true,
+      "estado": "PASS",
+      "detalle": "error_max=0"
+    },
+    {
+      "archivo": "olivine_osp1_equ_map.tiff",
+      "test": "rango_publicado_PDS",
+      "ok": true,
+      "estado": "PASS",
+      "detalle": "observado=[1.03999996, 1.33249855], etiqueta=[1.04, 1.332]"
+    },
+    {
+      "archivo": "olivine_osp1_equ_map.tiff",
+      "test": "resolucion_PDS",
+      "ok": true,
+      "estado": "PASS",
+      "detalle": ""
+    },
+    {
+      "archivo": "olivine_osp1_equ_map.tiff",
+      "test": "centro_global_coherente_con_etiqueta",
+      "ok": true,
+      "estado": "PASS",
+      "detalle": "centro_m=[0.0, 0.0]; esperado=[0,0]"
+    },
+    {
+      "archivo": "olivine_osp1_equ_map.tiff",
+      "test": "media_coherente_con_PDS",
+      "ok": true,
+      "estado": "PASS",
+      "detalle": ""
+    },
+    {
+      "archivo": "olivine_osp1_equ_map.tiff",
+      "test": "desviacion_coherente_con_PDS",
+      "ok": true,
+      "estado": "PASS",
+      "detalle": ""
+    },
+    {
+      "archivo": "olivine_osp1_equ_map.tiff",
+      "test": "opciones_PDS_corrigen_centro_en_memoria",
+      "ok": true,
+      "estado": "PASS",
+      "detalle": ""
+    },
+    {
+      "archivo": "olivine_osp1_equ_map.tiff",
+      "test": "PNG_existe",
+      "ok": true,
+      "estado": "PASS",
+      "detalle": ""
+    },
+    {
+      "archivo": "olivine_osp1_equ_map.tiff",
+      "test": "PNG_no_uniforme",
+      "ok": true,
+      "estado": "PASS",
+      "detalle": ""
+    },
+    {
+      "archivo": "olivine_osp2_equ_map.tiff",
+      "test": "una_banda",
+      "ok": true,
+      "estado": "PASS",
+      "detalle": ""
+    },
+    {
+      "archivo": "olivine_osp2_equ_map.tiff",
+      "test": "CRS_marciano",
+      "ok": true,
+      "estado": "PASS",
+      "detalle": ""
+    },
+    {
+      "archivo": "olivine_osp2_equ_map.tiff",
+      "test": "norte_arriba",
+      "ok": true,
+      "estado": "PASS",
+      "detalle": ""
+    },
+    {
+      "archivo": "olivine_osp2_equ_map.tiff",
+      "test": "dimensiones_PDS",
+      "ok": true,
+      "estado": "PASS",
+      "detalle": ""
+    },
+    {
+      "archivo": "olivine_osp2_equ_map.tiff",
+      "test": "formato_PDS",
+      "ok": true,
+      "estado": "PASS",
+      "detalle": ""
+    },
+    {
+      "archivo": "olivine_osp2_equ_map.tiff",
+      "test": "bytes_IMG",
+      "ok": true,
+      "estado": "PASS",
+      "detalle": ""
+    },
+    {
+      "archivo": "olivine_osp2_equ_map.tiff",
+      "test": "NoData_PDS",
+      "ok": true,
+      "estado": "PASS",
+      "detalle": ""
+    },
+    {
+      "archivo": "olivine_osp2_equ_map.tiff",
+      "test": "valores_fisicos_sin_doble_escala",
+      "ok": true,
+      "estado": "PASS",
+      "detalle": ""
+    },
+    {
+      "archivo": "olivine_osp2_equ_map.tiff",
+      "test": "lectura_completa_y_valores_finitos",
+      "ok": true,
+      "estado": "PASS",
+      "detalle": ""
+    },
+    {
+      "archivo": "olivine_osp2_equ_map.tiff",
+      "test": "mascara_igual_al_IMG",
+      "ok": true,
+      "estado": "PASS",
+      "detalle": "diferencias=0"
+    },
+    {
+      "archivo": "olivine_osp2_equ_map.tiff",
+      "test": "escala_igual_al_IMG",
+      "ok": true,
+      "estado": "PASS",
+      "detalle": "error_max=0"
+    },
+    {
+      "archivo": "olivine_osp2_equ_map.tiff",
+      "test": "rango_publicado_PDS",
+      "ok": true,
+      "estado": "PASS",
+      "detalle": "observado=[1.04000354, 1.32886946], etiqueta=[1.04, 1.329]"
+    },
+    {
+      "archivo": "olivine_osp2_equ_map.tiff",
+      "test": "resolucion_PDS",
+      "ok": true,
+      "estado": "PASS",
+      "detalle": ""
+    },
+    {
+      "archivo": "olivine_osp2_equ_map.tiff",
+      "test": "centro_global_coherente_con_etiqueta",
+      "ok": true,
+      "estado": "PASS",
+      "detalle": "centro_m=[0.0, 0.0]; esperado=[0,0]"
+    },
+    {
+      "archivo": "olivine_osp2_equ_map.tiff",
+      "test": "media_coherente_con_PDS",
+      "ok": true,
+      "estado": "PASS",
+      "detalle": ""
+    },
+    {
+      "archivo": "olivine_osp2_equ_map.tiff",
+      "test": "desviacion_coherente_con_PDS",
+      "ok": true,
+      "estado": "PASS",
+      "detalle": ""
+    },
+    {
+      "archivo": "olivine_osp2_equ_map.tiff",
+      "test": "opciones_PDS_corrigen_centro_en_memoria",
+      "ok": true,
+      "estado": "PASS",
+      "detalle": ""
+    },
+    {
+      "archivo": "olivine_osp2_equ_map.tiff",
+      "test": "PNG_existe",
+      "ok": true,
+      "estado": "PASS",
+      "detalle": ""
+    },
+    {
+      "archivo": "olivine_osp2_equ_map.tiff",
+      "test": "PNG_no_uniforme",
+      "ok": true,
+      "estado": "PASS",
+      "detalle": ""
+    },
+    {
+      "archivo": "olivine_osp3_equ_map.tiff",
+      "test": "una_banda",
+      "ok": true,
+      "estado": "PASS",
+      "detalle": ""
+    },
+    {
+      "archivo": "olivine_osp3_equ_map.tiff",
+      "test": "CRS_marciano",
+      "ok": true,
+      "estado": "PASS",
+      "detalle": ""
+    },
+    {
+      "archivo": "olivine_osp3_equ_map.tiff",
+      "test": "norte_arriba",
+      "ok": true,
+      "estado": "PASS",
+      "detalle": ""
+    },
+    {
+      "archivo": "olivine_osp3_equ_map.tiff",
+      "test": "dimensiones_PDS",
+      "ok": true,
+      "estado": "PASS",
+      "detalle": ""
+    },
+    {
+      "archivo": "olivine_osp3_equ_map.tiff",
+      "test": "formato_PDS",
+      "ok": true,
+      "estado": "PASS",
+      "detalle": ""
+    },
+    {
+      "archivo": "olivine_osp3_equ_map.tiff",
+      "test": "bytes_IMG",
+      "ok": true,
+      "estado": "PASS",
+      "detalle": ""
+    },
+    {
+      "archivo": "olivine_osp3_equ_map.tiff",
+      "test": "NoData_PDS",
+      "ok": true,
+      "estado": "PASS",
+      "detalle": ""
+    },
+    {
+      "archivo": "olivine_osp3_equ_map.tiff",
+      "test": "valores_fisicos_sin_doble_escala",
+      "ok": true,
+      "estado": "PASS",
+      "detalle": ""
+    },
+    {
+      "archivo": "olivine_osp3_equ_map.tiff",
+      "test": "lectura_completa_y_valores_finitos",
+      "ok": true,
+      "estado": "PASS",
+      "detalle": ""
+    },
+    {
+      "archivo": "olivine_osp3_equ_map.tiff",
+      "test": "mascara_igual_al_IMG",
+      "ok": true,
+      "estado": "PASS",
+      "detalle": "diferencias=0"
+    },
+    {
+      "archivo": "olivine_osp3_equ_map.tiff",
+      "test": "escala_igual_al_IMG",
+      "ok": true,
+      "estado": "PASS",
+      "detalle": "error_max=0"
+    },
+    {
+      "archivo": "olivine_osp3_equ_map.tiff",
+      "test": "rango_publicado_PDS",
+      "ok": true,
+      "estado": "PASS",
+      "detalle": "observado=[0.831067502, 1.0255059], etiqueta=[0.831, 1.026]"
+    },
+    {
+      "archivo": "olivine_osp3_equ_map.tiff",
+      "test": "resolucion_PDS",
+      "ok": true,
+      "estado": "PASS",
+      "detalle": ""
+    },
+    {
+      "archivo": "olivine_osp3_equ_map.tiff",
+      "test": "centro_global_coherente_con_etiqueta",
+      "ok": true,
+      "estado": "PASS",
+      "detalle": "centro_m=[0.0, 0.0]; esperado=[0,0]"
+    },
+    {
+      "archivo": "olivine_osp3_equ_map.tiff",
+      "test": "media_coherente_con_PDS",
+      "ok": true,
+      "estado": "PASS",
+      "detalle": ""
+    },
+    {
+      "archivo": "olivine_osp3_equ_map.tiff",
+      "test": "desviacion_coherente_con_PDS",
+      "ok": true,
+      "estado": "PASS",
+      "detalle": ""
+    },
+    {
+      "archivo": "olivine_osp3_equ_map.tiff",
+      "test": "opciones_PDS_corrigen_centro_en_memoria",
+      "ok": true,
+      "estado": "PASS",
+      "detalle": ""
+    },
+    {
+      "archivo": "olivine_osp3_equ_map.tiff",
+      "test": "PNG_existe",
+      "ok": true,
+      "estado": "PASS",
+      "detalle": ""
+    },
+    {
+      "archivo": "olivine_osp3_equ_map.tiff",
+      "test": "PNG_no_uniforme",
+      "ok": true,
+      "estado": "PASS",
+      "detalle": ""
+    },
+    {
+      "archivo": "pyroxene_bd2000_equ_map.tiff",
+      "test": "una_banda",
+      "ok": true,
+      "estado": "PASS",
+      "detalle": ""
+    },
+    {
+      "archivo": "pyroxene_bd2000_equ_map.tiff",
+      "test": "CRS_marciano",
+      "ok": true,
+      "estado": "PASS",
+      "detalle": ""
+    },
+    {
+      "archivo": "pyroxene_bd2000_equ_map.tiff",
+      "test": "norte_arriba",
+      "ok": true,
+      "estado": "PASS",
+      "detalle": ""
+    },
+    {
+      "archivo": "pyroxene_bd2000_equ_map.tiff",
+      "test": "dimensiones_PDS",
+      "ok": true,
+      "estado": "PASS",
+      "detalle": ""
+    },
+    {
+      "archivo": "pyroxene_bd2000_equ_map.tiff",
+      "test": "formato_PDS",
+      "ok": true,
+      "estado": "PASS",
+      "detalle": ""
+    },
+    {
+      "archivo": "pyroxene_bd2000_equ_map.tiff",
+      "test": "bytes_IMG",
+      "ok": true,
+      "estado": "PASS",
+      "detalle": ""
+    },
+    {
+      "archivo": "pyroxene_bd2000_equ_map.tiff",
+      "test": "NoData_PDS",
+      "ok": true,
+      "estado": "PASS",
+      "detalle": ""
+    },
+    {
+      "archivo": "pyroxene_bd2000_equ_map.tiff",
+      "test": "valores_fisicos_sin_doble_escala",
+      "ok": true,
+      "estado": "PASS",
+      "detalle": ""
+    },
+    {
+      "archivo": "pyroxene_bd2000_equ_map.tiff",
+      "test": "lectura_completa_y_valores_finitos",
+      "ok": true,
+      "estado": "PASS",
+      "detalle": ""
+    },
+    {
+      "archivo": "pyroxene_bd2000_equ_map.tiff",
+      "test": "mascara_igual_al_IMG",
+      "ok": true,
+      "estado": "PASS",
+      "detalle": "diferencias=0"
+    },
+    {
+      "archivo": "pyroxene_bd2000_equ_map.tiff",
+      "test": "escala_igual_al_IMG",
+      "ok": true,
+      "estado": "PASS",
+      "detalle": "error_max=0"
+    },
+    {
+      "archivo": "pyroxene_bd2000_equ_map.tiff",
+      "test": "rango_publicado_PDS",
+      "ok": true,
+      "estado": "PASS",
+      "detalle": "observado=[0.0100000501, 0.109973013], etiqueta=[0.01, 0.11]"
+    },
+    {
+      "archivo": "pyroxene_bd2000_equ_map.tiff",
+      "test": "resolucion_PDS",
+      "ok": true,
+      "estado": "PASS",
+      "detalle": ""
+    },
+    {
+      "archivo": "pyroxene_bd2000_equ_map.tiff",
+      "test": "centro_global_coherente_con_etiqueta",
+      "ok": true,
+      "estado": "PASS",
+      "detalle": "centro_m=[0.0, 0.0]; esperado=[0,0]"
+    },
+    {
+      "archivo": "pyroxene_bd2000_equ_map.tiff",
+      "test": "media_coherente_con_PDS",
+      "ok": true,
+      "estado": "PASS",
+      "detalle": ""
+    },
+    {
+      "archivo": "pyroxene_bd2000_equ_map.tiff",
+      "test": "desviacion_coherente_con_PDS",
+      "ok": true,
+      "estado": "PASS",
+      "detalle": ""
+    },
+    {
+      "archivo": "pyroxene_bd2000_equ_map.tiff",
+      "test": "opciones_PDS_corrigen_centro_en_memoria",
+      "ok": true,
+      "estado": "PASS",
+      "detalle": ""
+    },
+    {
+      "archivo": "pyroxene_bd2000_equ_map.tiff",
+      "test": "PNG_existe",
+      "ok": true,
+      "estado": "PASS",
+      "detalle": ""
+    },
+    {
+      "archivo": "pyroxene_bd2000_equ_map.tiff",
+      "test": "PNG_no_uniforme",
+      "ok": true,
+      "estado": "PASS",
+      "detalle": ""
+    },
+    {
+      "archivo": "minerales",
+      "test": "misma_malla_entre_4",
+      "ok": true,
+      "estado": "PASS",
+      "detalle": ""
+    }
+  ],
+  "fallos": 0,
+  "avisos": 1,
+  "total_tests": 99,
+  "rasters": {
+    "1-Mars_MGS_MOLA_DEM_mosaic_global_463m.tif": {
+      "dimensiones": [
+        46080,
+        23040
+      ],
+      "tipo": "Int16",
+      "pixeles_totales": 1061683200,
+      "validos": 1061683200,
+      "porcentaje_valido": 100.0,
+      "no_finitos_no_enmascarados": 0,
+      "min": -8201.0,
+      "max": 21241.0,
+      "media": -720.5257114608199,
+      "desviacion": 2976.6805556458958,
+      "nodata": -32768.0,
+      "geotransform": [
+        -10669675.197320545,
+        463.0935415503709,
+        0.0,
+        5334837.598660273,
+        0.0,
+        -463.0935415503709
+      ],
+      "crs": "PROJCS[\"Equirectangular Mars\",GEOGCS[\"GCS_Mars\",DATUM[\"D_Mars\",SPHEROID[\"Mars_localRadius\",3396190,0]],PRIMEM[\"Reference_Meridian\",0],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]]],PROJECTION[\"Equirectangular\"],PARAMETER[\"standard_parallel_1\",0],PARAMETER[\"central_meridian\",0],PARAMETER[\"false_easting\",0],PARAMETER[\"false_northing\",0],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH]]",
+      "desviacion_borde_X_m_frente_malla_nominal": 229.64312542622793,
+      "pixel_nominal_USGS_m": 463.08357440082983,
+      "procedencia": "Sin fuente raw/checksum local: solo integridad, geometría y plausibilidad.",
+      "png": {
+        "dimensiones": [
+          11520,
+          5760
+        ],
+        "min": 0,
+        "max": 255,
+        "niveles": 256,
+        "porcentaje_negro": 0.00011302806712962962
+      }
+    },
+    "GHI_marte.tif": {
+      "dimensiones": [
+        360,
+        180
+      ],
+      "tipo": "Float32",
+      "pixeles_totales": 64800,
+      "validos": 64800,
+      "porcentaje_valido": 100.0,
+      "no_finitos_no_enmascarados": 0,
+      "min": 0.0,
+      "max": 142.86712646484375,
+      "media": 92.12732493711843,
+      "desviacion": 44.08902446751228,
+      "nodata": null,
+      "geotransform": [
+        -180.0,
+        1.0,
+        0.0,
+        90.0,
+        0.0,
+        -1.0
+      ],
+      "crs": "GEOGCS[\"unknown\",DATUM[\"unknown\",SPHEROID[\"unknown\",3396190,169.894447223612]],PRIMEM[\"Reference meridian\",0],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AXIS[\"Latitude\",NORTH],AXIS[\"Longitude\",EAST]]",
+      "error_integracion_Wm2": 0.00021207972091019656,
+      "media_global_ponderada_Wm2": 110.62402629739802,
+      "ceros": 2880,
+      "uso": "Modelo simplificado de media diaria Ls=18.9; no observación ni media anual.",
+      "png": {
+        "dimensiones": [
+          90,
+          45
+        ],
+        "min": 0,
+        "max": 255,
+        "niveles": 43,
+        "porcentaje_negro": 4.444444444444445
+      }
+    },
+    "olivine_osp1_equ_map.tiff": {
+      "dimensiones": [
+        14400,
+        7200
+      ],
+      "tipo": "Float32",
+      "pixeles_totales": 103680000,
+      "validos": 1529424,
+      "porcentaje_valido": 1.475138888888889,
+      "no_finitos_no_enmascarados": 0,
+      "min": 1.0399999618530273,
+      "max": 1.332498550415039,
+      "media": 1.052644841212714,
+      "desviacion": 0.011009257924874904,
+      "nodata": -32768.0,
+      "geotransform": [
+        -10668816.000000002,
+        1481.7800000000002,
+        0.0,
+        5334408.000000001,
+        0.0,
+        -1481.7800000000002
+      ],
+      "crs": "PROJCS[\"SIMPLE_CYLINDRICAL MARS\",GEOGCS[\"GCS_MARS\",DATUM[\"D_MARS\",SPHEROID[\"MARS\",3396000,0]],PRIMEM[\"Reference_Meridian\",0],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]]],PROJECTION[\"Equirectangular\"],PARAMETER[\"standard_parallel_1\",0],PARAMETER[\"central_meridian\",0],PARAMETER[\"false_easting\",0],PARAMETER[\"false_northing\",0],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH]]",
+      "validos_IMG": 1529424,
+      "diferencias_mascara": 0,
+      "diferencias_valores": 0,
+      "error_max_escala": 0.0,
+      "rango_etiqueta": [
+        1.04,
+        1.332
+      ],
+      "media_etiqueta": 1.053,
+      "centro_m": [
+        0.0,
+        0.0
+      ],
+      "geotransform_con_shift_menos_0_5": [
+        -10668816.000000002,
+        1481.7800000000002,
+        0.0,
+        5334408.000000001,
+        0.0,
+        -1481.7800000000002
+      ],
+      "png": {
+        "dimensiones": [
+          3600,
+          1800
+        ],
+        "min": 0,
+        "max": 255,
+        "niveles": 181,
+        "porcentaje_negro": 98.55597222222222,
+        "validos_seleccionados_vecino_proximo": 95551,
+        "celdas_con_algun_dato_en_bloque_4x4": 134636,
+        "validos_pintados_negro": 1978,
+        "porcentaje_validos_pintados_negro": 2.0700986907515357
+      }
+    },
+    "olivine_osp2_equ_map.tiff": {
+      "dimensiones": [
+        14400,
+        7200
+      ],
+      "tipo": "Float32",
+      "pixeles_totales": 103680000,
+      "validos": 29352,
+      "porcentaje_valido": 0.028310185185185185,
+      "no_finitos_no_enmascarados": 0,
+      "min": 1.0400035381317139,
+      "max": 1.3288694620132446,
+      "media": 1.070164982009142,
+      "desviacion": 0.037784767423075946,
+      "nodata": -32768.0,
+      "geotransform": [
+        -10668816.000000002,
+        1481.7800000000002,
+        0.0,
+        5334408.000000001,
+        0.0,
+        -1481.7800000000002
+      ],
+      "crs": "PROJCS[\"SIMPLE_CYLINDRICAL MARS\",GEOGCS[\"GCS_MARS\",DATUM[\"D_MARS\",SPHEROID[\"MARS\",3396000,0]],PRIMEM[\"Reference_Meridian\",0],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]]],PROJECTION[\"Equirectangular\"],PARAMETER[\"standard_parallel_1\",0],PARAMETER[\"central_meridian\",0],PARAMETER[\"false_easting\",0],PARAMETER[\"false_northing\",0],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH]]",
+      "validos_IMG": 29352,
+      "diferencias_mascara": 0,
+      "diferencias_valores": 0,
+      "error_max_escala": 0.0,
+      "rango_etiqueta": [
+        1.04,
+        1.329
+      ],
+      "media_etiqueta": 1.07,
+      "centro_m": [
+        0.0,
+        0.0
+      ],
+      "geotransform_con_shift_menos_0_5": [
+        -10668816.000000002,
+        1481.7800000000002,
+        0.0,
+        5334408.000000001,
+        0.0,
+        -1481.7800000000002
+      ],
+      "png": {
+        "dimensiones": [
+          3600,
+          1800
+        ],
+        "min": 0,
+        "max": 255,
+        "niveles": 243,
+        "porcentaje_negro": 99.97233024691357,
+        "validos_seleccionados_vecino_proximo": 1800,
+        "celdas_con_algun_dato_en_bloque_4x4": 3890,
+        "validos_pintados_negro": 7,
+        "porcentaje_validos_pintados_negro": 0.3888888888888889
+      }
+    },
+    "olivine_osp3_equ_map.tiff": {
+      "dimensiones": [
+        14400,
+        7200
+      ],
+      "tipo": "Float32",
+      "pixeles_totales": 103680000,
+      "validos": 23597,
+      "porcentaje_valido": 0.022759452160493826,
+      "no_finitos_no_enmascarados": 0,
+      "min": 0.8310675024986267,
+      "max": 1.0255059003829956,
+      "media": 0.9678894383309075,
+      "desviacion": 0.028475424586822316,
+      "nodata": -32768.0,
+      "geotransform": [
+        -10668816.000000002,
+        1481.7800000000002,
+        0.0,
+        5334408.000000001,
+        0.0,
+        -1481.7800000000002
+      ],
+      "crs": "PROJCS[\"SIMPLE_CYLINDRICAL MARS\",GEOGCS[\"GCS_MARS\",DATUM[\"D_MARS\",SPHEROID[\"MARS\",3396000,0]],PRIMEM[\"Reference_Meridian\",0],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]]],PROJECTION[\"Equirectangular\"],PARAMETER[\"standard_parallel_1\",0],PARAMETER[\"central_meridian\",0],PARAMETER[\"false_easting\",0],PARAMETER[\"false_northing\",0],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH]]",
+      "validos_IMG": 23597,
+      "diferencias_mascara": 0,
+      "diferencias_valores": 0,
+      "error_max_escala": 0.0,
+      "rango_etiqueta": [
+        0.831,
+        1.026
+      ],
+      "media_etiqueta": 0.968,
+      "centro_m": [
+        0.0,
+        0.0
+      ],
+      "geotransform_con_shift_menos_0_5": [
+        -10668816.000000002,
+        1481.7800000000002,
+        0.0,
+        5334408.000000001,
+        0.0,
+        -1481.7800000000002
+      ],
+      "png": {
+        "dimensiones": [
+          3600,
+          1800
+        ],
+        "min": 0,
+        "max": 255,
+        "niveles": 206,
+        "porcentaje_negro": 99.99222222222222,
+        "validos_seleccionados_vecino_proximo": 1463,
+        "celdas_con_algun_dato_en_bloque_4x4": 3636,
+        "validos_pintados_negro": 959,
+        "porcentaje_validos_pintados_negro": 65.55023923444976
+      }
+    },
+    "pyroxene_bd2000_equ_map.tiff": {
+      "dimensiones": [
+        14400,
+        7200
+      ],
+      "tipo": "Float32",
+      "pixeles_totales": 103680000,
+      "validos": 39904582,
+      "porcentaje_valido": 38.48821566358025,
+      "no_finitos_no_enmascarados": 0,
+      "min": 0.010000050067901611,
+      "max": 0.1099730134010315,
+      "media": 0.027946012228229716,
+      "desviacion": 0.011787463252679702,
+      "nodata": -32768.0,
+      "geotransform": [
+        -10668816.000000002,
+        1481.7800000000002,
+        0.0,
+        5334408.000000001,
+        0.0,
+        -1481.7800000000002
+      ],
+      "crs": "PROJCS[\"SIMPLE_CYLINDRICAL MARS\",GEOGCS[\"GCS_MARS\",DATUM[\"D_MARS\",SPHEROID[\"MARS\",3396000,0]],PRIMEM[\"Reference_Meridian\",0],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]]],PROJECTION[\"Equirectangular\"],PARAMETER[\"standard_parallel_1\",0],PARAMETER[\"central_meridian\",0],PARAMETER[\"false_easting\",0],PARAMETER[\"false_northing\",0],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH]]",
+      "validos_IMG": 39904582,
+      "diferencias_mascara": 0,
+      "diferencias_valores": 0,
+      "error_max_escala": 0.0,
+      "rango_etiqueta": [
+        0.01,
+        0.11
+      ],
+      "media_etiqueta": 0.028,
+      "centro_m": [
+        0.0,
+        0.0
+      ],
+      "geotransform_con_shift_menos_0_5": [
+        -10668816.000000002,
+        1481.7800000000002,
+        0.0,
+        5334408.000000001,
+        0.0,
+        -1481.7800000000002
+      ],
+      "png": {
+        "dimensiones": [
+          3600,
+          1800
+        ],
+        "min": 0,
+        "max": 255,
+        "niveles": 254,
+        "porcentaje_negro": 61.731219135802476,
+        "validos_seleccionados_vecino_proximo": 2493325,
+        "celdas_con_algun_dato_en_bloque_4x4": 2813478,
+        "validos_pintados_negro": 13508,
+        "porcentaje_validos_pintados_negro": 0.5417665165993202
+      }
+    }
+  }
+}

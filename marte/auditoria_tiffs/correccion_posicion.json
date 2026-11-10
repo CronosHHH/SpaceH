@@ -1,0 +1,110 @@
+{
+  "fecha_UTC": "2026-11-09T10:09:53.930660+00:00",
+  "respaldo": "auditoria_tiffs/antes_correccion_posicion_k8jxadvx",
+  "productos": [
+    {
+      "archivo": "olivine_osp1_equ_map.tiff",
+      "antes": [
+        -10670297.780000001,
+        1481.7800000000002,
+        0.0,
+        5335889.78,
+        0.0,
+        -1481.7800000000002
+      ],
+      "despues": [
+        -10668816.000000002,
+        1481.7800000000002,
+        0.0,
+        5334408.000000001,
+        0.0,
+        -1481.7800000000002
+      ],
+      "centro_m": [
+        0.0,
+        0.0
+      ],
+      "pixeles_comparados": 103680000,
+      "valores_identicos": true,
+      "auxiliar_PNG_actualizado": "olivine_osp1_equ_map.png.aux.xml"
+    },
+    {
+      "archivo": "olivine_osp2_equ_map.tiff",
+      "antes": [
+        -10670297.780000001,
+        1481.7800000000002,
+        0.0,
+        5335889.78,
+        0.0,
+        -1481.7800000000002
+      ],
+      "despues": [
+        -10668816.000000002,
+        1481.7800000000002,
+        0.0,
+        5334408.000000001,
+        0.0,
+        -1481.7800000000002
+      ],
+      "centro_m": [
+        0.0,
+        0.0
+      ],
+      "pixeles_comparados": 103680000,
+      "valores_identicos": true,
+      "auxiliar_PNG_actualizado": "olivine_osp2_equ_map.png.aux.xml"
+    },
+    {
+      "archivo": "olivine_osp3_equ_map.tiff",
+      "antes": [
+        -10670297.780000001,
+        1481.7800000000002,
+        0.0,
+        5335889.78,
+        0.0,
+        -1481.7800000000002
+      ],
+      "despues": [
+        -10668816.000000002,
+        1481.7800000000002,
+        0.0,
+        5334408.000000001,
+        0.0,
+        -1481.7800000000002
+      ],
+      "centro_m": [
+        0.0,
+        0.0
+      ],
+      "pixeles_comparados": 103680000,
+      "valores_identicos": true,
+      "auxiliar_PNG_actualizado": "olivine_osp3_equ_map.png.aux.xml"
+    },
+    {
+      "archivo": "pyroxene_bd2000_equ_map.tiff",
+      "antes": [
+        -10670297.780000001,
+        1481.7800000000002,
+        0.0,
+        5335889.78,
+        0.0,
+        -1481.7800000000002
+      ],
+      "despues": [
+        -10668816.000000002,
+        1481.7800000000002,
+        0.0,
+        5334408.000000001,
+        0.0,
+        -1481.7800000000002
+      ],
+      "centro_m": [
+        0.0,
+        0.0
+      ],
+      "pixeles_comparados": 103680000,
+      "valores_identicos": true,
+      "auxiliar_PNG_actualizado": "pyroxene_bd2000_equ_map.png.aux.xml"
+    }
+  ]
+}

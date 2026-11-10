@@ -4,3 +4,17 @@
 .codex
 .agents
 .vscode
+
+# Datasets geoespaciales grandes
+/marte/*.tif
+/marte/*.tiff
+/marte/*.tif
+/marte/*.tiff
+/tierra/
+
+# Fuentes originales y scripts de generación
+/marte/origen_ds_gui_Y_albeolo/
+/marte/origen_ds_minerales/
+
+# Copias de respaldo generadas durante auditorías
+*.bak

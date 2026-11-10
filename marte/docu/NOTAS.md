@@ -1,7 +1,7 @@
 
 ---
 
-para ver todo bonito ----- > 
+para ver todo bonito ----- > ctrl + shift + v
 
 EL MOLA
 - esta en el DRIVE
@@ -72,12 +72,11 @@ A partir del cruce de las tres variables base, derivamos información física y 
 Los datos GeoTIFF georreferenciados para el elipsoide marciano (`+proj=longlat +a=3396190 +b=3376200`) se generan ejecutando los scripts del repositorio en tu entorno virtual:
 
 ```bash
-# 1. Crear el entorno virtual (solo la primera vez)
+# 1. CREAR Y ACTIVAR entorno virtual
 python3 -m venv venv
-
-# 2. Activar entorno virtual
 source venv/bin/activate
+python -m pip install numpy rasterio pillow matplotlib
 
-# 3. Generar capas GeoTIFF base
+# 2. Generar capas GeoTIFF base
 python generar_ghi.py
 python generar_albedo.py
