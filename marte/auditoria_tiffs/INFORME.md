@@ -2,6 +2,11 @@
 
 Fecha: 9 de noviembre de 2026. GDAL 3.12.2, Python del sistema.
 
+Actualización del 11 de noviembre de 2026: se ha añadido un GeoTIFF de albedo TES
+numérico con su máscara de cobertura. La auditoría original de los seis archivos
+se conserva a continuación; la fuente, conversión y compatibilidad de la séptima
+capa están en [albedo_ds.md](../docu/albedo_ds.md) y [albedo.json](./albedo.json).
+
 ## Resultado
 
 **Tras corregir la posición: 98 comprobaciones pasan, 0 fallan y 1 queda como advertencia (MOLA).** Se leyeron

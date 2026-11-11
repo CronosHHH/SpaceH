@@ -1,0 +1,160 @@
+{
+  "fecha_utc": "2026-11-11T14:02:33.845802+00:00",
+  "producto": {
+    "pagina_fuente": "https://www.mars.asu.edu/data/tes_albedo/",
+    "url_numerico": "https://ms-mars.mars.asu.edu/alb32?SERVICE=WMS&REQUEST=GetMap&FORMAT=image/vicar&WIDTH=2880&HEIGHT=1440&SRS=JMARS:4&BBOX=0,-90,360,90&STYLES=&VERSION=1.1.1&LAYERS=TES_Lambert_Albedo_numeric",
+    "url_mascara": "https://ms-mars.mars.asu.edu/TES_Lambert_Albedo?SERVICE=WMS&REQUEST=GetMap&FORMAT=image/png&WIDTH=2880&HEIGHT=1440&SRS=JMARS:4&BBOX=-180,-90,180,90&STYLES=&VERSION=1.1.1&LAYERS=TES_Lambert_Albedo",
+    "sha256_payload_vicar": "8ef70069ffb483d0872f9c73abf9d108b0bad8b30c444b2e464c13ac89d8643c",
+    "sha256_png_mascara": "7c65e78701622685b73a2845ef2c01a824e6192d81d909e1fca1dde12d6148b3",
+    "dimensiones": [
+      2880,
+      1440
+    ],
+    "resolucion_grados": 0.125,
+    "rotacion_columnas": 1440,
+    "validos": 4020480,
+    "nodata": 126720,
+    "min": 0.08094488084316254,
+    "max": 0.3209448754787445,
+    "media": 0.1972175756782219,
+    "niveles_validos": 255,
+    "paso_cuantizacion_aprox": 0.0009448818897637795,
+    "crs": "GEOGCS[\"unknown\",DATUM[\"unknown\",SPHEROID[\"unknown\",3396190,0]],PRIMEM[\"Reference meridian\",0],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AXIS[\"Longitude\",EAST],AXIS[\"Latitude\",NORTH]]",
+    "geotransform": [
+      -180.0,
+      0.125,
+      0.0,
+      90.0,
+      0.0,
+      -0.125
+    ],
+    "criterio_nodata": "Solo alfa cero del PNG oficial de la misma versión; salida NaN",
+    "convencion_crs": "Coordenadas angulares planetocéntricas; esfera R=3396190 m elegida como en el notebook. El VICAR no declara CRS ni radio.",
+    "sha256_geotiff": "9fe8927d3fc6ce1bcfc09fa6fac38dc67693c5db20dbc54ad154f5c8e0859c4f"
+  },
+  "compatibilidad": {
+    "compatible": true,
+    "dataset": "Renato-R-V/hspace-datasets",
+    "revision_referencias": "e88f169c94dd8a61e38d43333a3b9a81abd82073",
+    "crs_destino": "GEOGCS[\"unknown\",DATUM[\"unknown\",SPHEROID[\"unknown\",3396190,0]],PRIMEM[\"Reference meridian\",0],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AXIS[\"Longitude\",EAST],AXIS[\"Latitude\",NORTH]]",
+    "geotransform_destino": [
+      -180.0,
+      1.0,
+      0.0,
+      90.0,
+      0.0,
+      -1.0
+    ],
+    "criterio": "Reproyección a la malla del notebook, no igualdad de resoluciones nativas",
+    "GHI": "Misma interpretación planetocéntrica del notebook; celdas originales conservadas",
+    "capas": [
+      {
+        "archivo": "1-Mars_MGS_MOLA_DEM_mosaic_global_463m.tif",
+        "dimensiones_origen": [
+          46080,
+          23040
+        ],
+        "crs_origen": "PROJCS[\"Equirectangular Mars\",GEOGCS[\"GCS_Mars\",DATUM[\"D_Mars\",SPHEROID[\"Mars_localRadius\",3396190,0]],PRIMEM[\"Reference_Meridian\",0],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]]],PROJECTION[\"Equirectangular\"],PARAMETER[\"standard_parallel_1\",0],PARAMETER[\"central_meridian\",0],PARAMETER[\"false_easting\",0],PARAMETER[\"false_northing\",0],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH]]",
+        "malla_destino": [
+          360,
+          180
+        ],
+        "celdas_validas_1grado": 64800,
+        "min_1grado": -7491.197265625,
+        "max_1grado": 20526.81640625
+      },
+      {
+        "archivo": "GHI_marte.tif",
+        "dimensiones_origen": [
+          360,
+          180
+        ],
+        "crs_origen": "GEOGCS[\"unknown\",DATUM[\"unknown\",SPHEROID[\"unknown\",3396190,169.894447223612]],PRIMEM[\"Reference meridian\",0],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AXIS[\"Latitude\",NORTH],AXIS[\"Longitude\",EAST]]",
+        "malla_destino": [
+          360,
+          180
+        ],
+        "celdas_validas_1grado": 64800,
+        "min_1grado": 0.0,
+        "max_1grado": 142.86712646484375
+      },
+      {
+        "archivo": "olivine_osp1_equ_map.tiff",
+        "dimensiones_origen": [
+          14400,
+          7200
+        ],
+        "crs_origen": "PROJCS[\"SIMPLE_CYLINDRICAL MARS\",GEOGCS[\"GCS_MARS\",DATUM[\"D_MARS\",SPHEROID[\"MARS\",3396000,0]],PRIMEM[\"Reference_Meridian\",0],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]]],PROJECTION[\"Equirectangular\"],PARAMETER[\"standard_parallel_1\",0],PARAMETER[\"central_meridian\",0],PARAMETER[\"false_easting\",0],PARAMETER[\"false_northing\",0],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH]]",
+        "malla_destino": [
+          360,
+          180
+        ],
+        "celdas_validas_1grado": 5170,
+        "min_1grado": 1.0400043725967407,
+        "max_1grado": 1.2931833267211914
+      },
+      {
+        "archivo": "olivine_osp2_equ_map.tiff",
+        "dimensiones_origen": [
+          14400,
+          7200
+        ],
+        "crs_origen": "PROJCS[\"SIMPLE_CYLINDRICAL MARS\",GEOGCS[\"GCS_MARS\",DATUM[\"D_MARS\",SPHEROID[\"MARS\",3396000,0]],PRIMEM[\"Reference_Meridian\",0],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]]],PROJECTION[\"Equirectangular\"],PARAMETER[\"standard_parallel_1\",0],PARAMETER[\"central_meridian\",0],PARAMETER[\"false_easting\",0],PARAMETER[\"false_northing\",0],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH]]",
+        "malla_destino": [
+          360,
+          180
+        ],
+        "celdas_validas_1grado": 483,
+        "min_1grado": 1.0400389432907104,
+        "max_1grado": 1.228231430053711
+      },
+      {
+        "archivo": "olivine_osp3_equ_map.tiff",
+        "dimensiones_origen": [
+          14400,
+          7200
+        ],
+        "crs_origen": "PROJCS[\"SIMPLE_CYLINDRICAL MARS\",GEOGCS[\"GCS_MARS\",DATUM[\"D_MARS\",SPHEROID[\"MARS\",3396000,0]],PRIMEM[\"Reference_Meridian\",0],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]]],PROJECTION[\"Equirectangular\"],PARAMETER[\"standard_parallel_1\",0],PARAMETER[\"central_meridian\",0],PARAMETER[\"false_easting\",0],PARAMETER[\"false_northing\",0],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH]]",
+        "malla_destino": [
+          360,
+          180
+        ],
+        "celdas_validas_1grado": 660,
+        "min_1grado": 0.8400372266769409,
+        "max_1grado": 1.0251083374023438
+      },
+      {
+        "archivo": "pyroxene_bd2000_equ_map.tiff",
+        "dimensiones_origen": [
+          14400,
+          7200
+        ],
+        "crs_origen": "PROJCS[\"SIMPLE_CYLINDRICAL MARS\",GEOGCS[\"GCS_MARS\",DATUM[\"D_MARS\",SPHEROID[\"MARS\",3396000,0]],PRIMEM[\"Reference_Meridian\",0],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]]],PROJECTION[\"Equirectangular\"],PARAMETER[\"standard_parallel_1\",0],PARAMETER[\"central_meridian\",0],PARAMETER[\"false_easting\",0],PARAMETER[\"false_northing\",0],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH]]",
+        "malla_destino": [
+          360,
+          180
+        ],
+        "celdas_validas_1grado": 39737,
+        "min_1grado": 0.010003101080656052,
+        "max_1grado": 0.08237937837839127
+      },
+      {
+        "archivo": "Albedo_marte.tif",
+        "dimensiones_origen": [
+          2880,
+          1440
+        ],
+        "crs_origen": "GEOGCS[\"unknown\",DATUM[\"unknown\",SPHEROID[\"unknown\",3396190,0]],PRIMEM[\"Reference meridian\",0],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AXIS[\"Latitude\",NORTH],AXIS[\"Longitude\",EAST]]",
+        "malla_destino": [
+          360,
+          180
+        ],
+        "celdas_validas_1grado": 63360,
+        "min_1grado": 0.08103346079587936,
+        "max_1grado": 0.3209448754787445,
+        "error_max_media_8x8": 1.4901161193847656e-08,
+        "nodata_conservado": true
+      }
+    ]
+  }
+}

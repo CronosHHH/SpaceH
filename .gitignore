@@ -10,10 +10,13 @@
 /marte/*.tiff
 /marte/*.tif
 /marte/*.tiff
+/marte/prototipo_alineado/*.tif
+
 /tierra/
 
 # Fuentes originales y scripts de generación
-/marte/origen_ds_gui_Y_albeolo/
+/marte/origen_ds_gui_Y_albeolo/*
+!/marte/origen_ds_gui_Y_albeolo/generar_albedo.py
 /marte/origen_ds_minerales/
 
 # Copias de respaldo generadas durante auditorías
