@@ -1,0 +1,165 @@
+{
+  "fecha_utc": "2026-11-11T15:22:05.017933+00:00",
+  "compatible": true,
+  "capas": {
+    "ghi": {
+      "archivo": "GHI_tierra.tif",
+      "sha256": "427aaebc7a0e149cecac7ed36526aa4d9dc07b857c5151f7471d14239dc46e38",
+      "unidad": "W/m^2",
+      "min": 55.25,
+      "max": 307.0,
+      "validos": 64800,
+      "nodata": 0
+    },
+    "albedo": {
+      "archivo": "Albedo_tierra.tif",
+      "sha256": "323591124eb560eb93ba01561e44a06d057db5e7b8d9c2e71cd963582726ab9e",
+      "unidad": "1",
+      "min": 0.02001953125,
+      "max": 0.8007811903953552,
+      "validos": 64800,
+      "nodata": 0
+    }
+  },
+  "contrastes_api": [
+    {
+      "longitud": -3.5,
+      "latitud": 40.5,
+      "peticion": {
+        "parameters": "ALLSKY_SFC_SW_DWN,ALLSKY_SRF_ALB",
+        "community": "SB",
+        "longitude": -3.5,
+        "latitude": 40.5,
+        "format": "JSON",
+        "start": "2001",
+        "end": "2025"
+      },
+      "cabecera_api": {
+        "title": "NASA/POWER Source Native Resolution Climatology Climatologies",
+        "api": {
+          "version": "v2.10.1",
+          "name": "POWER Climatology API"
+        },
+        "sources": [
+          "SYN1DEG",
+          "POWER"
+        ],
+        "fill_value": -999.0,
+        "time_standard": "LST",
+        "range": "25-year Meteorological and Solar Monthly & Annual Climatologies (January 2001 - December 2025)"
+      },
+      "valores": {
+        "ghi": {
+          "tiff": 195.5,
+          "api": 195.97,
+          "error": 0.46999999999999886,
+          "tolerancia_cuantizacion": 0.97985
+        },
+        "albedo": {
+          "tiff": 0.169921875,
+          "api": 0.17,
+          "error": 7.812500000001221e-05,
+          "tolerancia_cuantizacion": 0.005
+        }
+      }
+    },
+    {
+      "longitud": 0.5,
+      "latitud": 0.5,
+      "peticion": {
+        "parameters": "ALLSKY_SFC_SW_DWN,ALLSKY_SRF_ALB",
+        "community": "SB",
+        "longitude": 0.5,
+        "latitude": 0.5,
+        "format": "JSON",
+        "start": "2001",
+        "end": "2025"
+      },
+      "cabecera_api": {
+        "title": "NASA/POWER Source Native Resolution Climatology Climatologies",
+        "api": {
+          "version": "v2.10.1",
+          "name": "POWER Climatology API"
+        },
+        "sources": [
+          "SYN1DEG",
+          "POWER"
+        ],
+        "fill_value": -999.0,
+        "time_standard": "LST",
+        "range": "25-year Meteorological and Solar Monthly & Annual Climatologies (January 2001 - December 2025)"
+      },
+      "valores": {
+        "ghi": {
+          "tiff": 215.0,
+          "api": 215.31,
+          "error": 0.3100000000000023,
+          "tolerancia_cuantizacion": 1.0765500000000001
+        },
+        "albedo": {
+          "tiff": 0.0599365234375,
+          "api": 0.06,
+          "error": 6.347656249999778e-05,
+          "tolerancia_cuantizacion": 0.005
+        }
+      }
+    },
+    {
+      "longitud": 130.5,
+      "latitud": -25.5,
+      "peticion": {
+        "parameters": "ALLSKY_SFC_SW_DWN,ALLSKY_SRF_ALB",
+        "community": "SB",
+        "longitude": 130.5,
+        "latitude": -25.5,
+        "format": "JSON",
+        "start": "2001",
+        "end": "2025"
+      },
+      "cabecera_api": {
+        "title": "NASA/POWER Source Native Resolution Climatology Climatologies",
+        "api": {
+          "version": "v2.10.1",
+          "name": "POWER Climatology API"
+        },
+        "sources": [
+          "SYN1DEG",
+          "POWER"
+        ],
+        "fill_value": -999.0,
+        "time_standard": "LST",
+        "range": "25-year Meteorological and Solar Monthly & Annual Climatologies (January 2001 - December 2025)"
+      },
+      "valores": {
+        "ghi": {
+          "tiff": 256.0,
+          "api": 256.36,
+          "error": 0.36000000000001364,
+          "tolerancia_cuantizacion": 1.2818
+        },
+        "albedo": {
+          "tiff": 0.1796875,
+          "api": 0.18,
+          "error": 0.00031249999999999334,
+          "tolerancia_cuantizacion": 0.005
+        }
+      }
+    }
+  ],
+  "periodo": "2001-2025",
+  "celdas_conjuntas": 64800,
+  "crs": "EPSG:4326",
+  "dimensiones": [
+    360,
+    180
+  ],
+  "geotransform": [
+    -180.0,
+    1.0,
+    0.0,
+    90.0,
+    0.0,
+    -1.0
+  ],
+  "nota": "Misma cuadrícula y climatología; GHI en W/m² y albedo adimensional. No equivalen a observaciones simultáneas con Marte ni tienen resolución de 463 m."
+}

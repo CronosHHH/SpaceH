@@ -1,0 +1,18 @@
+{
+  "commit": "1fee6799d0cc59f52434db6cd6054aec30aaca68",
+  "url": "https://huggingface.co/datasets/Renato-R-V/hspace-datasets/commit/1fee6799d0cc59f52434db6cd6054aec30aaca68",
+  "rutas_nuevas_verificadas": [
+    "tierra/origen_ds_gui_Y_albeolo/generar_albedo.py",
+    "tierra/origen_ds_gui_Y_albeolo/generar_ghi.py",
+    "tierra/origen_ds_gui_Y_albeolo/power_comun.py",
+    "tierra/origen_ds_gui_Y_albeolo/validar_radiacion.py",
+    "tierra/README.md",
+    "tierra/docu/radiacion.md"
+  ],
+  "rutas_antiguas_eliminadas": [
+    "tierra/marte/origen_ds_gui_Y_albeolo/generar_albedo.py",
+    "tierra/marte/origen_ds_gui_Y_albeolo/generar_ghi.py",
+    "tierra/marte/origen_ds_gui_Y_albeolo/power_comun.py",
+    "tierra/marte/origen_ds_gui_Y_albeolo/validar_radiacion.py"
+  ]
+}

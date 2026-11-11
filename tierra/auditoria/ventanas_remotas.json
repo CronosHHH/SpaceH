@@ -1,0 +1,48 @@
+{
+  "revision": "7ba36b3776cbd487e0ce444e4124d82e5a02784a",
+  "puntos": [
+    [
+      -3.7,
+      40.4
+    ],
+    [
+      -30,
+      0
+    ],
+    [
+      -64,
+      -4
+    ],
+    [
+      16,
+      25
+    ],
+    [
+      0,
+      -80
+    ],
+    [
+      33,
+      -1.5
+    ]
+  ],
+  "productos": {
+    "NASADEM_tierra_15arcsec.tif": [
+      596,
+      -32768,
+      74,
+      499,
+      -32768,
+      1131
+    ],
+    "Mascaras_tierra_MODIS_2021_15arcsec.tif": [
+      1,
+      10,
+      4,
+      0,
+      255,
+      2
+    ]
+  },
+  "lectura_por_ventanas_sin_descarga_completa": true
+}

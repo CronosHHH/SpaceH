@@ -1,0 +1,100 @@
+{
+  "fecha_utc": "2026-11-11T15:21:19.020966+00:00",
+  "tipo": "ghi",
+  "archivo": "GHI_tierra.tif",
+  "sha256": "427aaebc7a0e149cecac7ed36526aa4d9dc07b857c5151f7471d14239dc46e38",
+  "sha256_tiff_fuente": "6ce75fd1dfdc07ccd3d71106a10d1d1503ea17309825ce510c043053548aff35",
+  "tamano_bytes": 44041,
+  "metadatos_fuente": {
+    "servicio": "https://gis.earthdata.nasa.gov/portal/rest/services/POWER/POWER_CLIMATOLOGY_RADIATION_LST/ImageServer",
+    "item": "https://gis.earthdata.nasa.gov/portal/sharing/rest/content/items/0d75022c26f844668ec99f64a0cc2f67",
+    "periodo": "2001-2025",
+    "item_id": "0d75022c26f844668ec99f64a0cc2f67",
+    "item_modified_utc_ms": 1792418259137,
+    "arcgis_version": 12,
+    "variable": {
+      "unit": "W m-2",
+      "name": "ALLSKY_SFC_SW_DWN",
+      "description": "All Sky Surface Shortwave Downward Irradiance",
+      "attributes": {
+        "_QuantizeBitGroomNumberOfSignificantDigits": "2",
+        "structural_info": "COMPRESS=SHUFFLE, DEFLATE;FILTERS=[ { \"id\": 2, \"name\": \"SHUFFLE\", \"params\": [ 4 ] }, { \"id\": 1, \"name\": \"DEFLATE\", \"params\": [ 4 ] } ];QUANTIZE=BITGROOM(2)",
+        "significant_digits": "2",
+        "valid_min": "0",
+        "_FillValue": -999,
+        "valid_max": "1500",
+        "definition": "The total solar irradiance incident (direct plus diffuse) on a horizontal plane at the surface of the earth under all sky conditions. An alternative term for the total solar irradiance is the \"Global Horizontal Irradiance\" or GHI.",
+        "standard_name": "All_Sky_Surface_Shortwave_Downward_Irradiance",
+        "cell_methods": "time: mean",
+        "base": "float32",
+        "status": "official"
+      },
+      "dimensions": [
+        {
+          "extent": [
+            1,
+            13
+          ],
+          "unit": "",
+          "hasRanges": false,
+          "field": "month",
+          "intervalUnit": "",
+          "values": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13
+          ],
+          "name": "month",
+          "interval": 1,
+          "hasRegularIntervals": true
+        }
+      ]
+    }
+  },
+  "peticion_exportacion": {
+    "f": "json",
+    "bbox": "-180,-90,180,90",
+    "bboxSR": "4326",
+    "imageSR": "4326",
+    "size": "360,180",
+    "format": "tiff",
+    "pixelType": "F32",
+    "interpolation": "RSP_NearestNeighbor",
+    "adjustAspectRatio": "false",
+    "mosaicRule": "{\"multidimensionalDefinition\":[{\"variableName\":\"ALLSKY_SFC_SW_DWN\",\"dimensionName\":\"month\",\"values\":[13],\"isSlice\":true}]}",
+    "renderingRule": "{\"rasterFunction\":\"None\"}",
+    "noData": "-999",
+    "noDataInterpretation": "esriNoDataMatchAny"
+  },
+  "crs": "EPSG:4326",
+  "geotransform": [
+    -180.0,
+    1.0,
+    0.0,
+    90.0,
+    0.0,
+    -1.0
+  ],
+  "dimensiones": [
+    360,
+    180
+  ],
+  "unidad": "W/m^2",
+  "min": 55.25,
+  "max": 307.0,
+  "media_pixeles": 163.14260534298273,
+  "media_global_ponderada_cos_lat": 186.123853186132,
+  "validos": 64800,
+  "nodata": 0,
+  "valores_y_mascara_conservados": true
+}

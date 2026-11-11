@@ -1,0 +1,112 @@
+{
+  "commit": "f96a77b87b9f0b10eb1e2481445c8e9a3be62b74",
+  "url": "https://huggingface.co/datasets/Renato-R-V/hspace-datasets/commit/f96a77b87b9f0b10eb1e2481445c8e9a3be62b74",
+  "productos": [
+    {
+      "archivo": "tierra/GHI_tierra.tif",
+      "bytes": 44041,
+      "sha256": "427aaebc7a0e149cecac7ed36526aa4d9dc07b857c5151f7471d14239dc46e38",
+      "crs": "EPSG:4326",
+      "dimensiones": [
+        360,
+        180
+      ],
+      "geotransform": [
+        -180.0,
+        1.0,
+        0.0,
+        90.0,
+        0.0,
+        -1.0
+      ],
+      "tipo": [
+        "float32"
+      ],
+      "nodata": "NaN",
+      "bandas": [
+        {
+          "banda": 1,
+          "nombre": "GHI medio anual NASA POWER 2001-2025",
+          "unidad": "W/m^2",
+          "validos": 64800,
+          "min": 55.25,
+          "max": 307.0,
+          "media": 163.14260534298273,
+          "tags": {
+            "long_name": "All Sky Surface Shortwave Downward Irradiance",
+            "units": "W/m^2"
+          }
+        }
+      ],
+      "tags": {
+        "climatology_period": "2001-2025",
+        "nasa_power_license": "No restrictions on use, access or download; attribute NASA POWER",
+        "processing": "Numeric export; no stretch; no unit conversion; NoData to NaN",
+        "source": "https://gis.earthdata.nasa.gov/portal/rest/services/POWER/POWER_CLIMATOLOGY_RADIATION_LST/ImageServer",
+        "source_item": "https://gis.earthdata.nasa.gov/portal/sharing/rest/content/items/0d75022c26f844668ec99f64a0cc2f67",
+        "source_month": "13",
+        "source_parameter": "ALLSKY_SFC_SW_DWN",
+        "source_precision": "NASA POWER BitGroom quantization: 2 significant decimal digits",
+        "source_spatial_resolution": "1 degree; native grid; not 463 metres",
+        "source_tiff_sha256": "6ce75fd1dfdc07ccd3d71106a10d1d1503ea17309825ce510c043053548aff35",
+        "source_units": "W m-2",
+        "temporal_summary": "annual mean; month=13; NASA POWER climatology",
+        "AREA_OR_POINT": "Area"
+      }
+    },
+    {
+      "archivo": "tierra/Albedo_tierra.tif",
+      "bytes": 34702,
+      "sha256": "323591124eb560eb93ba01561e44a06d057db5e7b8d9c2e71cd963582726ab9e",
+      "crs": "EPSG:4326",
+      "dimensiones": [
+        360,
+        180
+      ],
+      "geotransform": [
+        -180.0,
+        1.0,
+        0.0,
+        90.0,
+        0.0,
+        -1.0
+      ],
+      "tipo": [
+        "float32"
+      ],
+      "nodata": "NaN",
+      "bandas": [
+        {
+          "banda": 1,
+          "nombre": "Albedo superficial anual NASA POWER 2001-2025",
+          "unidad": "1",
+          "validos": 64800,
+          "min": 0.02001953125,
+          "max": 0.8007811903953552,
+          "media": 0.2470339859932385,
+          "tags": {
+            "long_name": "All Sky Surface Albedo",
+            "units": "1"
+          }
+        }
+      ],
+      "tags": {
+        "climatology_period": "2001-2025",
+        "nasa_power_license": "No restrictions on use, access or download; attribute NASA POWER",
+        "processing": "Numeric export; no stretch; no unit conversion; NoData to NaN",
+        "source": "https://gis.earthdata.nasa.gov/portal/rest/services/POWER/POWER_CLIMATOLOGY_RADIATION_LST/ImageServer",
+        "source_item": "https://gis.earthdata.nasa.gov/portal/sharing/rest/content/items/0d75022c26f844668ec99f64a0cc2f67",
+        "source_month": "13",
+        "source_parameter": "ALLSKY_SRF_ALB",
+        "source_precision": "NASA POWER BitGroom quantization: 2 significant decimal digits",
+        "source_spatial_resolution": "1 degree; native grid; not 463 metres",
+        "source_tiff_sha256": "d1af1d1c64241aa2df6d2299a13e873e5a078ab6c827025f39e479ae50fc287c",
+        "source_units": "dimensionless",
+        "temporal_summary": "annual mean; month=13; NASA POWER climatology",
+        "AREA_OR_POINT": "Area"
+      }
+    }
+  ],
+  "remoto_sha256_y_tamano_verificados": true,
+  "eliminacion_local_solicitada": true
+}

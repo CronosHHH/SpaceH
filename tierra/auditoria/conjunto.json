@@ -1,0 +1,32 @@
+{
+  "fecha_utc": "2026-11-11T15:34:42.458596+00:00",
+  "compatible": true,
+  "productos_1grado": [
+    "GHI_tierra.tif",
+    "Albedo_tierra.tif",
+    "NASADEM_tierra_1grado.tif",
+    "Fracciones_mascaras_tierra_MODIS_2021_1grado.tif"
+  ],
+  "productos_15arcsec_misma_malla": [
+    "NASADEM_tierra_15arcsec.tif",
+    "Mascaras_tierra_MODIS_2021_15arcsec.tif"
+  ],
+  "sha256_resumenes": {
+    "GHI_tierra.tif": "427aaebc7a0e149cecac7ed36526aa4d9dc07b857c5151f7471d14239dc46e38",
+    "Albedo_tierra.tif": "323591124eb560eb93ba01561e44a06d057db5e7b8d9c2e71cd963582726ab9e",
+    "NASADEM_tierra_1grado.tif": "28de53c8cf825f14fcd56f7cf8973d48c9c72630c3a709484815313b6a450326",
+    "Fracciones_mascaras_tierra_MODIS_2021_1grado.tif": "28cc0672742f1281cc0f6e4f5be79a7a348570ae05b01d1a5d1077a1d3774929"
+  },
+  "celdas_1grado": 64800,
+  "celdas_conjuntas": 14520,
+  "elevacion_celdas_validas": 14520,
+  "clasificacion_celdas_con_datos": 59194,
+  "rangos_y_mascaras_correctos": true,
+  "fracciones_exclusivas_correctas": true,
+  "limitaciones": [
+    "POWER: climatología anual 2001–2025 a 1°; no tiene resolución climática de 463 m.",
+    "NASADEM: alturas sobre EGM96, principalmente SRTM de 2000; cobertura limitada.",
+    "Máscaras: clasificación MODIS 2021 y océano cartográfico Natural Earth; consultar su cobertura.",
+    "Compatibilidad geométrica y de unidades para exploración; no son observaciones simultáneas ni equivalentes a los modelos marcianos."
+  ]
+}

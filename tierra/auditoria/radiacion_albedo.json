@@ -1,0 +1,100 @@
+{
+  "fecha_utc": "2026-11-11T15:21:18.365415+00:00",
+  "tipo": "albedo",
+  "archivo": "Albedo_tierra.tif",
+  "sha256": "323591124eb560eb93ba01561e44a06d057db5e7b8d9c2e71cd963582726ab9e",
+  "sha256_tiff_fuente": "d1af1d1c64241aa2df6d2299a13e873e5a078ab6c827025f39e479ae50fc287c",
+  "tamano_bytes": 34702,
+  "metadatos_fuente": {
+    "servicio": "https://gis.earthdata.nasa.gov/portal/rest/services/POWER/POWER_CLIMATOLOGY_RADIATION_LST/ImageServer",
+    "item": "https://gis.earthdata.nasa.gov/portal/sharing/rest/content/items/0d75022c26f844668ec99f64a0cc2f67",
+    "periodo": "2001-2025",
+    "item_id": "0d75022c26f844668ec99f64a0cc2f67",
+    "item_modified_utc_ms": 1792418259137,
+    "arcgis_version": 12,
+    "variable": {
+      "unit": "dimensionless",
+      "name": "ALLSKY_SRF_ALB",
+      "description": "All Sky Surface Albedo",
+      "attributes": {
+        "_QuantizeBitGroomNumberOfSignificantDigits": "2",
+        "structural_info": "COMPRESS=SHUFFLE, DEFLATE;FILTERS=[ { \"id\": 2, \"name\": \"SHUFFLE\", \"params\": [ 4 ] }, { \"id\": 1, \"name\": \"DEFLATE\", \"params\": [ 4 ] } ];QUANTIZE=BITGROOM(2)",
+        "significant_digits": "2",
+        "valid_min": "0",
+        "_FillValue": -999,
+        "valid_max": "1",
+        "definition": "The all sky rate of reflectivity of the earth's surface; the ratio of the solar energy reflected by the surface of the earth compared to the total solar energy incident reaching the surface of the earth.",
+        "standard_name": "All_Sky_Surface_Albedo",
+        "cell_methods": "time: mean",
+        "base": "float32",
+        "status": "official"
+      },
+      "dimensions": [
+        {
+          "extent": [
+            1,
+            13
+          ],
+          "unit": "",
+          "hasRanges": false,
+          "field": "month",
+          "intervalUnit": "",
+          "values": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13
+          ],
+          "name": "month",
+          "interval": 1,
+          "hasRegularIntervals": true
+        }
+      ]
+    }
+  },
+  "peticion_exportacion": {
+    "f": "json",
+    "bbox": "-180,-90,180,90",
+    "bboxSR": "4326",
+    "imageSR": "4326",
+    "size": "360,180",
+    "format": "tiff",
+    "pixelType": "F32",
+    "interpolation": "RSP_NearestNeighbor",
+    "adjustAspectRatio": "false",
+    "mosaicRule": "{\"multidimensionalDefinition\":[{\"variableName\":\"ALLSKY_SRF_ALB\",\"dimensionName\":\"month\",\"values\":[13],\"isSlice\":true}]}",
+    "renderingRule": "{\"rasterFunction\":\"None\"}",
+    "noData": "-999",
+    "noDataInterpretation": "esriNoDataMatchAny"
+  },
+  "crs": "EPSG:4326",
+  "geotransform": [
+    -180.0,
+    1.0,
+    0.0,
+    90.0,
+    0.0,
+    -1.0
+  ],
+  "dimensiones": [
+    360,
+    180
+  ],
+  "unidad": "1",
+  "min": 0.02001953125,
+  "max": 0.8007811903953552,
+  "media_pixeles": 0.2470339859932385,
+  "media_global_ponderada_cos_lat": 0.14903139345064478,
+  "validos": 64800,
+  "nodata": 0,
+  "valores_y_mascara_conservados": true
+}

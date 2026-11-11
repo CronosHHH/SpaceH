@@ -1,0 +1,62 @@
+{
+  "muestras": [
+    {
+      "lugar": "Meseta española",
+      "lon_lat": [
+        -4.5,
+        40.5
+      ],
+      "id": "NASADEM_HGT_n40w005",
+      "resolucion_ventana_grados": [
+        0.00027777777780002566,
+        0.0002777777777997888
+      ],
+      "pixeles_validos_nativos": 225,
+      "min_nativo_m": 1131,
+      "max_nativo_m": 1173,
+      "media_ventana_nativa_m": 1148.1644444444444,
+      "valor_reducido_m": 1148,
+      "diferencia_media_m": -0.16444444444437067,
+      "coherente_con_rango_nativo": true
+    },
+    {
+      "lugar": "Depresión del mar Muerto",
+      "lon_lat": [
+        35.4,
+        31.5
+      ],
+      "id": "NASADEM_HGT_n31e035",
+      "resolucion_ventana_grados": [
+        0.0002777777777997888,
+        0.00027777777780002566
+      ],
+      "pixeles_validos_nativos": 225,
+      "min_nativo_m": -417,
+      "max_nativo_m": -371,
+      "media_ventana_nativa_m": -413.88,
+      "valor_reducido_m": -414,
+      "diferencia_media_m": -0.12000000000000455,
+      "coherente_con_rango_nativo": true
+    },
+    {
+      "lugar": "Himalaya",
+      "lon_lat": [
+        86.925,
+        27.985
+      ],
+      "id": "NASADEM_HGT_n27e086",
+      "resolucion_ventana_grados": [
+        0.0002777777778002625,
+        0.00027777777780002566
+      ],
+      "pixeles_validos_nativos": 225,
+      "min_nativo_m": 7908,
+      "max_nativo_m": 8730,
+      "media_ventana_nativa_m": 8327.493333333334,
+      "valor_reducido_m": 8321,
+      "diferencia_media_m": -6.493333333333794,
+      "coherente_con_rango_nativo": true
+    }
+  ],
+  "nota": "El servicio puede usar pirámides y redondeo Int16; no se afirma igualdad con la media exacta de225muestras."
+}

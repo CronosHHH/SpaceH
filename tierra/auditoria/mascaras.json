@@ -1,0 +1,142 @@
+{
+  "fecha_utc": "2026-11-11T15:29:57.088625+00:00",
+  "validado": true,
+  "fuente": "https://zenodo.org/api/records/8367523/files/lc_mcd12q1v061.t1_c_500m_s_20210101_20211231_go_epsg.4326_v20230818.tif/content",
+  "fuente_md5": "862010ec14d621333126336a65ee01c5",
+  "fuente_bytes": 132512453,
+  "oceanos_fuente": "https://raw.githubusercontent.com/nvkelso/natural-earth-vector/ca96624a56bd078437bca8184e78163e5039ad19/geojson/ne_10m_ocean.geojson",
+  "oceanos_sha256": "f9696a1337c746a0f6c8c13bc60d0f230d2ef8d105198d5657726c8f8e763fc2",
+  "licencia_derivados": "CC-BY-SA-4.0",
+  "geometria_original": {
+    "dimensiones": [
+      86400,
+      35849
+    ],
+    "geotransform": [
+      -180.0,
+      0.004166667,
+      0.0,
+      87.37,
+      0.0,
+      -0.004166667
+    ],
+    "nodata_declarado": null,
+    "limites": [
+      -180.0,
+      -62.00084528299999,
+      180.0000288,
+      87.37
+    ]
+  },
+  "overviews_fuente_no_utilizados": true,
+  "clases_espurias_overview_muestreado": [
+    18,
+    19
+  ],
+  "remuestreo": "Vecino mas proximo calculado desde centros; solo lecturas nativas",
+  "geotransform_15arcsec": [
+    -180.0,
+    0.004166666666666667,
+    0.0,
+    90.0,
+    0.0,
+    -0.004166666666666667
+  ],
+  "dimensiones": [
+    86400,
+    43200
+  ],
+  "histograma_clases_alineadas_antes_suplemento": {
+    "0": 1476442008,
+    "1": 20035434,
+    "2": 57478832,
+    "3": 3193870,
+    "4": 17570011,
+    "5": 36645078,
+    "6": 2826897,
+    "7": 101111393,
+    "8": 80224110,
+    "9": 101039567,
+    "10": 197351392,
+    "11": 11808840,
+    "12": 69816392,
+    "13": 5132721,
+    "14": 8281205,
+    "15": 42306136,
+    "16": 118126613,
+    "17": 1383089501
+  },
+  "histograma_mascara": {
+    "0": 160432749,
+    "1": 5132721,
+    "2": 1383089501,
+    "4": 707383021,
+    "10": 1127996241,
+    "255": 348445767
+  },
+  "sha256_pixeles_mascara": "0b130513744c76ee5a7e0126124fd1e3ca2336242fa0f3106e3383e281d23984",
+  "controles_espaciales": {
+    "Madrid": {
+      "lon": -3.7,
+      "lat": 40.4,
+      "valor": 1,
+      "ok": true
+    },
+    "Atlantico": {
+      "lon": -30,
+      "lat": 0,
+      "valor": 10,
+      "ok": true
+    },
+    "Amazonia": {
+      "lon": -64,
+      "lat": -4,
+      "valor": 4,
+      "ok": true
+    },
+    "Sahara": {
+      "lon": 16,
+      "lat": 25,
+      "valor": 0,
+      "ok": true
+    },
+    "Antartida": {
+      "lon": 0,
+      "lat": -80,
+      "valor": 255,
+      "ok": true
+    }
+  },
+  "celdas_1grado_con_clasificacion": 59194,
+  "fracciones_1grado": {
+    "Fracción ciudades": {
+      "min": 0.0,
+      "max": 0.41420137882232666
+    },
+    "Fracción agua": {
+      "min": 0.0,
+      "max": 1.0
+    },
+    "Fracción vegetación": {
+      "min": 0.0,
+      "max": 1.0
+    },
+    "Cobertura clasificada": {
+      "min": 0.0,
+      "max": 1.0
+    }
+  },
+  "productos": [
+    {
+      "archivo": "Mascaras_tierra_MODIS_2021_15arcsec.tif",
+      "bytes": 18471392,
+      "sha256": "6590a71b0b23e86b2e651521f11fd5b977c605d2cddc55b51064b7a689bd40cb"
+    },
+    {
+      "archivo": "Fracciones_mascaras_tierra_MODIS_2021_1grado.tif",
+      "bytes": 234927,
+      "sha256": "28cc0672742f1281cc0f6e4f5be79a7a348570ae05b01d1a5d1077a1d3774929"
+    }
+  ],
+  "limitacion": "Clasificacion de celda predominante 2021; no inventario de edificios/plantas. Oceanos suplementados con costa cartografica Natural Earth 1:10000000; desconocidos terrestres conservados."
+}

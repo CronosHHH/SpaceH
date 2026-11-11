@@ -1,0 +1,86 @@
+{
+  "compatible": true,
+  "productos": [
+    {
+      "archivo": "tierra_1grado.tif",
+      "sha256": "df7df23d493be7c77e3c0683b3267dac3a958ca77d40980547858921586982fc",
+      "bandas": 6,
+      "bytes": 396456
+    },
+    {
+      "archivo": "coberturas_tierra_1grado.tif",
+      "sha256": "33fef62e8ecc24f4716ee9df9e92357d0d311ba673318363fa5dd234604cac06",
+      "bandas": 2,
+      "bytes": 18935
+    }
+  ],
+  "revision_hf_fuentes": "1fee6799d0cc59f52434db6cd6054aec30aaca68",
+  "sha256_catalogo_fuentes": "43a1e4c25f2d72a3d95de4608ef21f2817bd011703b17e5d15fd7acca748a46b",
+  "fuentes": {
+    "dem": {
+      "archivo": "tierra/NASADEM_tierra_1grado.tif",
+      "sha256": "28de53c8cf825f14fcd56f7cf8973d48c9c72630c3a709484815313b6a450326"
+    },
+    "ghi": {
+      "archivo": "tierra/GHI_tierra.tif",
+      "sha256": "427aaebc7a0e149cecac7ed36526aa4d9dc07b857c5151f7471d14239dc46e38"
+    },
+    "albedo": {
+      "archivo": "tierra/Albedo_tierra.tif",
+      "sha256": "323591124eb560eb93ba01561e44a06d057db5e7b8d9c2e71cd963582726ab9e"
+    },
+    "mascaras": {
+      "archivo": "tierra/Fracciones_mascaras_tierra_MODIS_2021_1grado.tif",
+      "sha256": "28cc0672742f1281cc0f6e4f5be79a7a348570ae05b01d1a5d1077a1d3774929"
+    }
+  },
+  "crs": "EPSG:4326",
+  "dimensiones": [
+    360,
+    180
+  ],
+  "geotransform": [
+    -180.0,
+    1.0,
+    0.0,
+    90.0,
+    0.0,
+    -1.0
+  ],
+  "cubo": [
+    6,
+    180,
+    360
+  ],
+  "celdas_seis_variables_conocidas": 14520,
+  "celdas_validas_por_variable": {
+    "Elevación NASADEM": 14520,
+    "GHI terrestre": 64800,
+    "Albedo terrestre": 64800,
+    "Fracción ciudades": 59194,
+    "Fracción agua": 59194,
+    "Fracción vegetación": 59194
+  },
+  "coberturas": {
+    "Cobertura NASADEM": {
+      "min": 0.0,
+      "max": 1.0,
+      "celdas_cobertura_positiva": 14520
+    },
+    "Cobertura clasificada": {
+      "min": 0.0,
+      "max": 1.0,
+      "celdas_cobertura_positiva": 59194
+    }
+  },
+  "checks": {
+    "malla_comun": true,
+    "valores_y_mascaras_conservados": true,
+    "rangos_fisicos_y_unidades": true,
+    "cobertura_y_nodata_coherentes": true,
+    "periodo_radiacion_coincidente": true,
+    "sha256_fuentes_verificados": true,
+    "licencia_y_atribucion_conservadas": true
+  },
+  "licencia": "CC-BY-SA-4.0"
+}

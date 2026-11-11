@@ -1,0 +1,544 @@
+{
+  "dataset": "Renato-R-V/hspace-datasets",
+  "productos": {
+    "GHI_tierra.tif": {
+      "archivo": "tierra/GHI_tierra.tif",
+      "bytes": 44041,
+      "sha256": "427aaebc7a0e149cecac7ed36526aa4d9dc07b857c5151f7471d14239dc46e38",
+      "crs": "EPSG:4326",
+      "dimensiones": [
+        360,
+        180
+      ],
+      "geotransform": [
+        -180.0,
+        1.0,
+        0.0,
+        90.0,
+        0.0,
+        -1.0
+      ],
+      "tipo": [
+        "float32"
+      ],
+      "nodata": "NaN",
+      "bandas": [
+        {
+          "banda": 1,
+          "nombre": "GHI medio anual NASA POWER 2001-2025",
+          "unidad": "W/m^2",
+          "validos": 64800,
+          "min": 55.25,
+          "max": 307.0,
+          "media": 163.14260534298273,
+          "tags": {
+            "long_name": "All Sky Surface Shortwave Downward Irradiance",
+            "units": "W/m^2"
+          }
+        }
+      ],
+      "tags": {
+        "climatology_period": "2001-2025",
+        "nasa_power_license": "No restrictions on use, access or download; attribute NASA POWER",
+        "processing": "Numeric export; no stretch; no unit conversion; NoData to NaN",
+        "source": "https://gis.earthdata.nasa.gov/portal/rest/services/POWER/POWER_CLIMATOLOGY_RADIATION_LST/ImageServer",
+        "source_item": "https://gis.earthdata.nasa.gov/portal/sharing/rest/content/items/0d75022c26f844668ec99f64a0cc2f67",
+        "source_month": "13",
+        "source_parameter": "ALLSKY_SFC_SW_DWN",
+        "source_precision": "NASA POWER BitGroom quantization: 2 significant decimal digits",
+        "source_spatial_resolution": "1 degree; native grid; not 463 metres",
+        "source_tiff_sha256": "6ce75fd1dfdc07ccd3d71106a10d1d1503ea17309825ce510c043053548aff35",
+        "source_units": "W m-2",
+        "temporal_summary": "annual mean; month=13; NASA POWER climatology",
+        "AREA_OR_POINT": "Area"
+      }
+    },
+    "Albedo_tierra.tif": {
+      "archivo": "tierra/Albedo_tierra.tif",
+      "bytes": 34702,
+      "sha256": "323591124eb560eb93ba01561e44a06d057db5e7b8d9c2e71cd963582726ab9e",
+      "crs": "EPSG:4326",
+      "dimensiones": [
+        360,
+        180
+      ],
+      "geotransform": [
+        -180.0,
+        1.0,
+        0.0,
+        90.0,
+        0.0,
+        -1.0
+      ],
+      "tipo": [
+        "float32"
+      ],
+      "nodata": "NaN",
+      "bandas": [
+        {
+          "banda": 1,
+          "nombre": "Albedo superficial anual NASA POWER 2001-2025",
+          "unidad": "1",
+          "validos": 64800,
+          "min": 0.02001953125,
+          "max": 0.8007811903953552,
+          "media": 0.2470339859932385,
+          "tags": {
+            "long_name": "All Sky Surface Albedo",
+            "units": "1"
+          }
+        }
+      ],
+      "tags": {
+        "climatology_period": "2001-2025",
+        "nasa_power_license": "No restrictions on use, access or download; attribute NASA POWER",
+        "processing": "Numeric export; no stretch; no unit conversion; NoData to NaN",
+        "source": "https://gis.earthdata.nasa.gov/portal/rest/services/POWER/POWER_CLIMATOLOGY_RADIATION_LST/ImageServer",
+        "source_item": "https://gis.earthdata.nasa.gov/portal/sharing/rest/content/items/0d75022c26f844668ec99f64a0cc2f67",
+        "source_month": "13",
+        "source_parameter": "ALLSKY_SRF_ALB",
+        "source_precision": "NASA POWER BitGroom quantization: 2 significant decimal digits",
+        "source_spatial_resolution": "1 degree; native grid; not 463 metres",
+        "source_tiff_sha256": "d1af1d1c64241aa2df6d2299a13e873e5a078ab6c827025f39e479ae50fc287c",
+        "source_units": "dimensionless",
+        "temporal_summary": "annual mean; month=13; NASA POWER climatology",
+        "AREA_OR_POINT": "Area"
+      }
+    },
+    "NASADEM_tierra_15arcsec.tif": {
+      "archivo": "tierra/NASADEM_tierra_15arcsec.tif",
+      "bytes": 584900273,
+      "sha256": "52a69308b73119ed4548a4441030a85dd2f78849435bd0d87f1d3e65e8af2d9d",
+      "crs": "EPSG:4326",
+      "dimensiones": [
+        86400,
+        43200
+      ],
+      "geotransform": [
+        -180.0,
+        0.004166666666666667,
+        0.0,
+        90.0,
+        0.0,
+        -0.004166666666666667
+      ],
+      "tipo": [
+        "int16"
+      ],
+      "nodata": -32768.0,
+      "bandas": [
+        {
+          "banda": 1,
+          "nombre": "NASADEM elevation; cloud average on 15 arcsec grid",
+          "unidad": "m EGM96",
+          "validos": 836352000,
+          "min": -418.0,
+          "max": 8588.0,
+          "media": 558.1450804840546,
+          "tags": {
+            "units": "m",
+            "vertical_datum": "EGM96"
+          }
+        }
+      ],
+      "tags": {
+        "coverage_note": "Only NASADEM catalog tiles; nominal land coverage 56S to 60N; no invented polar terrain",
+        "missing_note": "-32768 is unknown; unallocated sparse blocks are NoData; zero elevation remains valid",
+        "original_resolution": "1 arcsec, approximately 30 m; original tiles never stored locally",
+        "processing": "Cloud RasterIO/warp average to 240x240 cells per degree; native Int16 rounding retained",
+        "resolution_note": "15 arcsec; approximately 463.8 m east-west and 460.7 m north-south at equator; longitude width decreases with latitude",
+        "source": "NASADEM HGT v001; NASA JPL (2020); Microsoft Planetary Computer",
+        "source_catalog": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/nasadem",
+        "source_doi": "10.5067/MEASURES/NASADEM/NASADEM_HGT.001",
+        "AREA_OR_POINT": "Area"
+      }
+    },
+    "NASADEM_tierra_1grado.tif": {
+      "archivo": "tierra/NASADEM_tierra_1grado.tif",
+      "bytes": 70662,
+      "sha256": "28de53c8cf825f14fcd56f7cf8973d48c9c72630c3a709484815313b6a450326",
+      "crs": "EPSG:4326",
+      "dimensiones": [
+        360,
+        180
+      ],
+      "geotransform": [
+        -180.0,
+        1.0,
+        0.0,
+        90.0,
+        0.0,
+        -1.0
+      ],
+      "tipo": [
+        "float32",
+        "float32"
+      ],
+      "nodata": "NaN",
+      "bandas": [
+        {
+          "banda": 1,
+          "nombre": "Elevación NASADEM; media válida por celda de 1 grado",
+          "unidad": "m EGM96",
+          "validos": 14520,
+          "min": -45.47758865356445,
+          "max": 5409.13720703125,
+          "media": 558.1450803818038,
+          "tags": {
+            "units": "m",
+            "vertical_datum": "EGM96"
+          }
+        },
+        {
+          "banda": 2,
+          "nombre": "Fracción de píxeles NASADEM válidos por celda de 1 grado",
+          "unidad": "fracción válida",
+          "validos": 64800,
+          "min": 0.0,
+          "max": 1.0,
+          "media": 0.22407407407407406,
+          "tags": {
+            "range": "0..1; zero means no source coverage",
+            "units": "1"
+          }
+        }
+      ],
+      "tags": {
+        "aggregation": "Mean of valid 240x240 source cells; coverage=sum(valid)/57600",
+        "source_file": "NASADEM_tierra_15arcsec.tif",
+        "AREA_OR_POINT": "Area"
+      }
+    },
+    "Mascaras_tierra_MODIS_2021_15arcsec.tif": {
+      "archivo": "tierra/Mascaras_tierra_MODIS_2021_15arcsec.tif",
+      "bytes": 18471392,
+      "sha256": "6590a71b0b23e86b2e651521f11fd5b977c605d2cddc55b51064b7a689bd40cb",
+      "crs": "EPSG:4326",
+      "dimensiones": [
+        86400,
+        43200
+      ],
+      "geotransform": [
+        -180.0,
+        0.004166666666666667,
+        0.0,
+        90.0,
+        0.0,
+        -0.004166666666666667
+      ],
+      "tipo": [
+        "uint8"
+      ],
+      "nodata": 255.0,
+      "bandas": [
+        {
+          "banda": 1,
+          "nombre": "Máscara IGBP 2021 y océano: bits 1 ciudad, 2 agua, 4 vegetación, 8 suplemento oceánico",
+          "unidad": "bits: ciudad=1; agua=2; vegetación=4; océano suplementario=8",
+          "validos": 3384034233,
+          "min": 0.0,
+          "max": 10.0,
+          "media": 4.988367449827745,
+          "tags": {
+            "units": "bitmask",
+            "unknown": "255; comprobar antes de operaciones bit a bit"
+          }
+        }
+      ],
+      "tags": {
+        "attribution": "Rolf Simoes/OpenGeoHub (2023), doi:10.5281/zenodo.8367523; NASA MCD12Q1.061; Made with Natural Earth",
+        "classes": "0=otros; 1=ciudades; 2=agua MODIS; 4=vegetacion; 10=agua oceano Natural Earth; 255=desconocido",
+        "license": "CC-BY-SA-4.0",
+        "ocean_scale_note": "Natural Earth escala 1:10000000; rasterizar a 15arcsec no añade detalle de costa",
+        "ocean_source": "https://raw.githubusercontent.com/nvkelso/natural-earth-vector/ca96624a56bd078437bca8184e78163e5039ad19/geojson/ne_10m_ocean.geojson",
+        "ocean_source_sha256": "f9696a1337c746a0f6c8c13bc60d0f230d2ef8d105198d5657726c8f8e763fc2",
+        "resampling": "nearest from native pixels; source overviews explicitly unused",
+        "source": "https://zenodo.org/api/records/8367523/files/lc_mcd12q1v061.t1_c_500m_s_20210101_20211231_go_epsg.4326_v20230818.tif/content",
+        "source_md5": "862010ec14d621333126336a65ee01c5",
+        "source_year": "2021",
+        "vegetation": "IGBP 1..12 y 14; incluye cultivos, humedales y vegetacion dispersa de esas clases",
+        "water": "IGBP 17 y suplemento oceanico SOLO donde MODIS no clasifica",
+        "AREA_OR_POINT": "Area"
+      }
+    },
+    "Fracciones_mascaras_tierra_MODIS_2021_1grado.tif": {
+      "archivo": "tierra/Fracciones_mascaras_tierra_MODIS_2021_1grado.tif",
+      "bytes": 234927,
+      "sha256": "28cc0672742f1281cc0f6e4f5be79a7a348570ae05b01d1a5d1077a1d3774929",
+      "crs": "EPSG:4326",
+      "dimensiones": [
+        360,
+        180
+      ],
+      "geotransform": [
+        -180.0,
+        1.0,
+        0.0,
+        90.0,
+        0.0,
+        -1.0
+      ],
+      "tipo": [
+        "float32",
+        "float32",
+        "float32",
+        "float32"
+      ],
+      "nodata": "NaN",
+      "bandas": [
+        {
+          "banda": 1,
+          "nombre": "Fracción ciudades",
+          "unidad": "fracción",
+          "validos": 59194,
+          "min": 0.0,
+          "max": 0.41420137882232666,
+          "media": 0.0015053847275161604,
+          "tags": {
+            "denominator": "solo píxeles clasificados",
+            "units": "1"
+          }
+        },
+        {
+          "banda": 2,
+          "nombre": "Fracción agua",
+          "unidad": "fracción",
+          "validos": 59194,
+          "min": 0.0,
+          "max": 1.0,
+          "media": 0.7439710133401859,
+          "tags": {
+            "denominator": "solo píxeles clasificados",
+            "units": "1"
+          }
+        },
+        {
+          "banda": 3,
+          "nombre": "Fracción vegetación",
+          "unidad": "fracción",
+          "validos": 59194,
+          "min": 0.0,
+          "max": 1.0,
+          "media": 0.20746996219342242,
+          "tags": {
+            "denominator": "solo píxeles clasificados",
+            "units": "1"
+          }
+        },
+        {
+          "banda": 4,
+          "nombre": "Cobertura clasificada",
+          "unidad": "fracción",
+          "validos": 64800,
+          "min": 0.0,
+          "max": 1.0,
+          "media": 0.9066449741157714,
+          "tags": {
+            "denominator": "todos los píxeles",
+            "units": "1"
+          }
+        }
+      ],
+      "tags": {
+        "license": "CC-BY-SA-4.0",
+        "processing": "Fracciones de pixeles clasificados, no fracciones biofisicas subpixel ni areas geodesicas",
+        "source": "Mascaras_tierra_MODIS_2021_15arcsec.tif",
+        "source_year": "2021",
+        "unknown_note": "Primeras tres bandas NaN donde cobertura=0; cuarta banda 0..1",
+        "AREA_OR_POINT": "Area"
+      }
+    },
+    "tierra_1grado.tif": {
+      "archivo": "tierra/tierra_1grado.tif",
+      "bytes": 396456,
+      "sha256": "82554fdd7bbe6f00bef8fe72e6127c089716fc5803248ccab398c5cb42feab3b",
+      "crs": "EPSG:4326",
+      "dimensiones": [
+        360,
+        180
+      ],
+      "geotransform": [
+        -180.0,
+        1.0,
+        0.0,
+        90.0,
+        0.0,
+        -1.0
+      ],
+      "tipo": [
+        "float32",
+        "float32",
+        "float32",
+        "float32",
+        "float32",
+        "float32"
+      ],
+      "nodata": "NaN",
+      "bandas": [
+        {
+          "banda": 1,
+          "nombre": "Elevación NASADEM",
+          "unidad": "m EGM96",
+          "validos": 14520,
+          "min": -45.47758865356445,
+          "max": 5409.13720703125,
+          "media": 558.1450803818038,
+          "tags": {
+            "units": "m",
+            "vertical_datum": "EGM96"
+          }
+        },
+        {
+          "banda": 2,
+          "nombre": "GHI terrestre",
+          "unidad": "W/m^2",
+          "validos": 64800,
+          "min": 55.25,
+          "max": 307.0,
+          "media": 163.14260534298273,
+          "tags": {
+            "units": "W/m^2"
+          }
+        },
+        {
+          "banda": 3,
+          "nombre": "Albedo terrestre",
+          "unidad": "1",
+          "validos": 64800,
+          "min": 0.02001953125,
+          "max": 0.8007811903953552,
+          "media": 0.2470339859932385,
+          "tags": {
+            "units": "1"
+          }
+        },
+        {
+          "banda": 4,
+          "nombre": "Fracción ciudades",
+          "unidad": "fracción",
+          "validos": 59194,
+          "min": 0.0,
+          "max": 0.41420137882232666,
+          "media": 0.0015053847275161604,
+          "tags": {
+            "denominator": "classified pixels only",
+            "units": "1"
+          }
+        },
+        {
+          "banda": 5,
+          "nombre": "Fracción agua",
+          "unidad": "fracción",
+          "validos": 59194,
+          "min": 0.0,
+          "max": 1.0,
+          "media": 0.7439710133401859,
+          "tags": {
+            "denominator": "classified pixels only",
+            "units": "1"
+          }
+        },
+        {
+          "banda": 6,
+          "nombre": "Fracción vegetación",
+          "unidad": "fracción",
+          "validos": 59194,
+          "min": 0.0,
+          "max": 1.0,
+          "media": 0.20746996219342242,
+          "tags": {
+            "denominator": "classified pixels only",
+            "units": "1"
+          }
+        }
+      ],
+      "tags": {
+        "attribution": "NASA POWER; NASA/JPL-Caltech NASADEM; Rolf Simoes/OpenGeoHub (2023), doi:10.5281/zenodo.8367523, MODIS MCD12Q1.061; Made with Natural Earth",
+        "attribution_note": "Mixed derived product contains CC-BY-SA-4.0 mask fractions; share alike",
+        "classification_year": "2021",
+        "climatology_period": "2001-2025",
+        "fractions_note": "Thematic fractions among classified pixels, not subpixel biophysical abundance; coverage in companion raster",
+        "grid": "Earth WGS84; 1 degree; 360x180; native POWER scale",
+        "license": "CC-BY-SA-4.0",
+        "source_catalog_sha256": "27dcbe27d11e87253dde495a5cb7c880c91d1d42dbcdfcd50ce11f133f50f4c5",
+        "source_dataset": "Renato-R-V/hspace-datasets",
+        "source_files": "{\"dem\": \"tierra/NASADEM_tierra_1grado.tif\", \"ghi\": \"tierra/GHI_tierra.tif\", \"albedo\": \"tierra/Albedo_tierra.tif\", \"mascaras\": \"tierra/Fracciones_mascaras_tierra_MODIS_2021_1grado.tif\"}",
+        "source_revision": "7ba36b3776cbd487e0ce444e4124d82e5a02784a",
+        "unknown_note": "NaN remains unknown; zero coverage is a valid fraction",
+        "AREA_OR_POINT": "Area"
+      }
+    },
+    "coberturas_tierra_1grado.tif": {
+      "archivo": "tierra/coberturas_tierra_1grado.tif",
+      "bytes": 18935,
+      "sha256": "e684a3cf91a768f0b9843dba2bdd4a9bc40b0ed20bef1990e2a3045dde514281",
+      "crs": "EPSG:4326",
+      "dimensiones": [
+        360,
+        180
+      ],
+      "geotransform": [
+        -180.0,
+        1.0,
+        0.0,
+        90.0,
+        0.0,
+        -1.0
+      ],
+      "tipo": [
+        "float32",
+        "float32"
+      ],
+      "nodata": "NaN",
+      "bandas": [
+        {
+          "banda": 1,
+          "nombre": "Cobertura NASADEM",
+          "unidad": "fracción",
+          "validos": 64800,
+          "min": 0.0,
+          "max": 1.0,
+          "media": 0.22407407407407406,
+          "tags": {
+            "denominator": "all native pixels in analysis cell",
+            "units": "1"
+          }
+        },
+        {
+          "banda": 2,
+          "nombre": "Cobertura clasificada",
+          "unidad": "fracción",
+          "validos": 64800,
+          "min": 0.0,
+          "max": 1.0,
+          "media": 0.9066449741157714,
+          "tags": {
+            "denominator": "all native pixels in analysis cell",
+            "units": "1"
+          }
+        }
+      ],
+      "tags": {
+        "attribution": "NASA POWER; NASA/JPL-Caltech NASADEM; Rolf Simoes/OpenGeoHub (2023), doi:10.5281/zenodo.8367523, MODIS MCD12Q1.061; Made with Natural Earth",
+        "attribution_note": "Mixed derived product contains CC-BY-SA-4.0 mask fractions; share alike",
+        "classification_year": "2021",
+        "climatology_period": "2001-2025",
+        "fractions_note": "Valid or classified pixel counts divided by all native pixels in each analysis cell",
+        "grid": "Earth WGS84; 1 degree; 360x180; native POWER scale",
+        "license": "CC-BY-SA-4.0",
+        "source_catalog_sha256": "27dcbe27d11e87253dde495a5cb7c880c91d1d42dbcdfcd50ce11f133f50f4c5",
+        "source_dataset": "Renato-R-V/hspace-datasets",
+        "source_files": "{\"dem\": \"tierra/NASADEM_tierra_1grado.tif\", \"ghi\": \"tierra/GHI_tierra.tif\", \"albedo\": \"tierra/Albedo_tierra.tif\", \"mascaras\": \"tierra/Fracciones_mascaras_tierra_MODIS_2021_1grado.tif\"}",
+        "source_revision": "7ba36b3776cbd487e0ce444e4124d82e5a02784a",
+        "unknown_note": "NaN remains unknown; zero coverage is a valid fraction",
+        "AREA_OR_POINT": "Area"
+      }
+    }
+  },
+  "actualizacion_utc": "2026-11-11T15:41:54.548492+00:00",
+  "notas": [
+    "15 segundos de arco equivalen a unos 464 m en el ecuador; ancho este-oeste decrece con la latitud.",
+    "GHI y albedo POWER son nativos a 1 grado; no tienen resolución local de 464 m.",
+    "Las capas mantienen fechas y definiciones físicas diferentes; consultar documentación por producto."
+  ]
+}

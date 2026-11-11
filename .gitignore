@@ -12,7 +12,13 @@
 /marte/*.tiff
 /marte/prototipo_alineado/*.tif
 
-/tierra/
+# Conservar código, documentación y notebooks terrestres, no sus rásteres.
+/tierra/**/*.tif
+/tierra/**/*.tiff
+/tierra/**/__pycache__/
+/tierra/**/.venv/
+/tierra/**/fuentes/
+/tierra/origen_*/
 
 # Fuentes originales y scripts de generación
 /marte/origen_ds_gui_Y_albeolo/*

@@ -1,0 +1,194 @@
+{
+  "commit": "90fc519c21245c4569a59ec93d411a3db88bfc64",
+  "url": "https://huggingface.co/datasets/Renato-R-V/hspace-datasets/commit/90fc519c21245c4569a59ec93d411a3db88bfc64",
+  "productos": [
+    {
+      "archivo": "tierra/tierra_1grado.tif",
+      "bytes": 396456,
+      "sha256": "82554fdd7bbe6f00bef8fe72e6127c089716fc5803248ccab398c5cb42feab3b",
+      "crs": "EPSG:4326",
+      "dimensiones": [
+        360,
+        180
+      ],
+      "geotransform": [
+        -180.0,
+        1.0,
+        0.0,
+        90.0,
+        0.0,
+        -1.0
+      ],
+      "tipo": [
+        "float32",
+        "float32",
+        "float32",
+        "float32",
+        "float32",
+        "float32"
+      ],
+      "nodata": "NaN",
+      "bandas": [
+        {
+          "banda": 1,
+          "nombre": "Elevación NASADEM",
+          "unidad": "m EGM96",
+          "validos": 14520,
+          "min": -45.47758865356445,
+          "max": 5409.13720703125,
+          "media": 558.1450803818038,
+          "tags": {
+            "units": "m",
+            "vertical_datum": "EGM96"
+          }
+        },
+        {
+          "banda": 2,
+          "nombre": "GHI terrestre",
+          "unidad": "W/m^2",
+          "validos": 64800,
+          "min": 55.25,
+          "max": 307.0,
+          "media": 163.14260534298273,
+          "tags": {
+            "units": "W/m^2"
+          }
+        },
+        {
+          "banda": 3,
+          "nombre": "Albedo terrestre",
+          "unidad": "1",
+          "validos": 64800,
+          "min": 0.02001953125,
+          "max": 0.8007811903953552,
+          "media": 0.2470339859932385,
+          "tags": {
+            "units": "1"
+          }
+        },
+        {
+          "banda": 4,
+          "nombre": "Fracción ciudades",
+          "unidad": "fracción",
+          "validos": 59194,
+          "min": 0.0,
+          "max": 0.41420137882232666,
+          "media": 0.0015053847275161604,
+          "tags": {
+            "denominator": "classified pixels only",
+            "units": "1"
+          }
+        },
+        {
+          "banda": 5,
+          "nombre": "Fracción agua",
+          "unidad": "fracción",
+          "validos": 59194,
+          "min": 0.0,
+          "max": 1.0,
+          "media": 0.7439710133401859,
+          "tags": {
+            "denominator": "classified pixels only",
+            "units": "1"
+          }
+        },
+        {
+          "banda": 6,
+          "nombre": "Fracción vegetación",
+          "unidad": "fracción",
+          "validos": 59194,
+          "min": 0.0,
+          "max": 1.0,
+          "media": 0.20746996219342242,
+          "tags": {
+            "denominator": "classified pixels only",
+            "units": "1"
+          }
+        }
+      ],
+      "tags": {
+        "attribution": "NASA POWER; NASA/JPL-Caltech NASADEM; Rolf Simoes/OpenGeoHub (2023), doi:10.5281/zenodo.8367523, MODIS MCD12Q1.061; Made with Natural Earth",
+        "attribution_note": "Mixed derived product contains CC-BY-SA-4.0 mask fractions; share alike",
+        "classification_year": "2021",
+        "climatology_period": "2001-2025",
+        "fractions_note": "Thematic fractions among classified pixels, not subpixel biophysical abundance; coverage in companion raster",
+        "grid": "Earth WGS84; 1 degree; 360x180; native POWER scale",
+        "license": "CC-BY-SA-4.0",
+        "source_catalog_sha256": "27dcbe27d11e87253dde495a5cb7c880c91d1d42dbcdfcd50ce11f133f50f4c5",
+        "source_dataset": "Renato-R-V/hspace-datasets",
+        "source_files": "{\"dem\": \"tierra/NASADEM_tierra_1grado.tif\", \"ghi\": \"tierra/GHI_tierra.tif\", \"albedo\": \"tierra/Albedo_tierra.tif\", \"mascaras\": \"tierra/Fracciones_mascaras_tierra_MODIS_2021_1grado.tif\"}",
+        "source_revision": "7ba36b3776cbd487e0ce444e4124d82e5a02784a",
+        "unknown_note": "NaN remains unknown; zero coverage is a valid fraction",
+        "AREA_OR_POINT": "Area"
+      }
+    },
+    {
+      "archivo": "tierra/coberturas_tierra_1grado.tif",
+      "bytes": 18935,
+      "sha256": "e684a3cf91a768f0b9843dba2bdd4a9bc40b0ed20bef1990e2a3045dde514281",
+      "crs": "EPSG:4326",
+      "dimensiones": [
+        360,
+        180
+      ],
+      "geotransform": [
+        -180.0,
+        1.0,
+        0.0,
+        90.0,
+        0.0,
+        -1.0
+      ],
+      "tipo": [
+        "float32",
+        "float32"
+      ],
+      "nodata": "NaN",
+      "bandas": [
+        {
+          "banda": 1,
+          "nombre": "Cobertura NASADEM",
+          "unidad": "fracción",
+          "validos": 64800,
+          "min": 0.0,
+          "max": 1.0,
+          "media": 0.22407407407407406,
+          "tags": {
+            "denominator": "all native pixels in analysis cell",
+            "units": "1"
+          }
+        },
+        {
+          "banda": 2,
+          "nombre": "Cobertura clasificada",
+          "unidad": "fracción",
+          "validos": 64800,
+          "min": 0.0,
+          "max": 1.0,
+          "media": 0.9066449741157714,
+          "tags": {
+            "denominator": "all native pixels in analysis cell",
+            "units": "1"
+          }
+        }
+      ],
+      "tags": {
+        "attribution": "NASA POWER; NASA/JPL-Caltech NASADEM; Rolf Simoes/OpenGeoHub (2023), doi:10.5281/zenodo.8367523, MODIS MCD12Q1.061; Made with Natural Earth",
+        "attribution_note": "Mixed derived product contains CC-BY-SA-4.0 mask fractions; share alike",
+        "classification_year": "2021",
+        "climatology_period": "2001-2025",
+        "fractions_note": "Valid or classified pixel counts divided by all native pixels in each analysis cell",
+        "grid": "Earth WGS84; 1 degree; 360x180; native POWER scale",
+        "license": "CC-BY-SA-4.0",
+        "source_catalog_sha256": "27dcbe27d11e87253dde495a5cb7c880c91d1d42dbcdfcd50ce11f133f50f4c5",
+        "source_dataset": "Renato-R-V/hspace-datasets",
+        "source_files": "{\"dem\": \"tierra/NASADEM_tierra_1grado.tif\", \"ghi\": \"tierra/GHI_tierra.tif\", \"albedo\": \"tierra/Albedo_tierra.tif\", \"mascaras\": \"tierra/Fracciones_mascaras_tierra_MODIS_2021_1grado.tif\"}",
+        "source_revision": "7ba36b3776cbd487e0ce444e4124d82e5a02784a",
+        "unknown_note": "NaN remains unknown; zero coverage is a valid fraction",
+        "AREA_OR_POINT": "Area"
+      }
+    }
+  ],
+  "remoto_sha256_y_tamano_verificados": true,
+  "eliminacion_local_solicitada": true
+}

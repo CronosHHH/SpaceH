@@ -1,0 +1,51 @@
+{
+  "fecha_utc": "2026-11-11T15:33:50.287050+00:00",
+  "producto_completo": true,
+  "fuente": "NASADEM HGT v001",
+  "doi": "10.5067/MEASURES/NASADEM/NASADEM_HGT.001",
+  "catalogo": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/nasadem",
+  "teselas_catalogo": 14520,
+  "teselas_procesadas": 14520,
+  "archivos_originales_guardados": 0,
+  "resolucion_segundos_arco": 15,
+  "resolucion_ecuador_m_aprox": 463.831,
+  "crs": "EPSG:4326",
+  "datum_vertical": "EGM96",
+  "unidades": "m",
+  "geotransform": [
+    -180.0,
+    0.004166666666666667,
+    0.0,
+    90.0,
+    0.0,
+    -0.004166666666666667
+  ],
+  "dimensiones": [
+    86400,
+    43200
+  ],
+  "nodata": -32768,
+  "agregacion": "Servicio PC RasterIO/warp average; conserva redondeo Int16; no media exacta demostrada de 225 muestras nativas",
+  "validacion": {
+    "pixeles_validos": 836352000,
+    "min_m": -418,
+    "max_m": 8588,
+    "lectura_completa": true,
+    "conteos_iguales_al_diario": true,
+    "bloques_sin_fuente_son_nodata": true,
+    "teselas_reconsultadas_identicas": [
+      "NASADEM_HGT_n00e006",
+      "NASADEM_HGT_n47e074",
+      "NASADEM_HGT_s56w072"
+    ],
+    "hashes_14520_ventanas_conservados": true,
+    "resumen_1grado_igual_a_medias_y_coberturas": true,
+    "muestras_nativas": "nasadem_muestras_nativas.json"
+  },
+  "bytes_tif": 584900273,
+  "sha256_tif": "52a69308b73119ed4548a4441030a85dd2f78849435bd0d87f1d3e65e8af2d9d",
+  "resumen_1grado": "NASADEM_tierra_1grado.tif",
+  "sha256_resumen": "28de53c8cf825f14fcd56f7cf8973d48c9c72630c3a709484815313b6a450326",
+  "resolucion_ecuador_norte_sur_m_aprox": 460.726,
+  "sha256_catalogo": "4321f0606e2a2c5761484d928152ba631e94eb2cbafbef905e2287f3f96191ab"
+}
