@@ -1,0 +1,718 @@
+{
+  "objetivo": "Consulta marciana → candidatos terrestres; similitud regional relativa",
+  "validacion_fisica_de_analogos": false,
+  "alcance_validacion": "Recuperación de positivos conocidos bajo perturbaciones y fidelidad de búsqueda; no etiquetas geológicas",
+  "configuracion": {
+    "revision_hf": "dd6f0fcd1f9d206c1860b4a808336e196203c144",
+    "semilla": 42,
+    "k": 10,
+    "celda_m": 120000,
+    "radio_relieve_m": 300000,
+    "pesos": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "filtros": {
+      "max_vegetacion": 0.2,
+      "max_agua": 0.05,
+      "max_ciudades": 0.02,
+      "min_cobertura": 0.9,
+      "min_cobertura_vegetacion": 0.75
+    }
+  },
+  "procedencia": {
+    "dataset": "Renato-R-V/hspace-datasets",
+    "revision": "dd6f0fcd1f9d206c1860b4a808336e196203c144",
+    "archivos": [
+      {
+        "archivo": "tierra/catalogo.json",
+        "bytes": 27205,
+        "sha256": "929fd2140d6930e5b6398a208bb1eccb5acd081d4afff416100819dfd1676065",
+        "revision": "dd6f0fcd1f9d206c1860b4a808336e196203c144",
+        "url": "https://huggingface.co/datasets/Renato-R-V/hspace-datasets/raw/dd6f0fcd1f9d206c1860b4a808336e196203c144/tierra/catalogo.json",
+        "hash_remoto_verificado": true
+      },
+      {
+        "archivo": "tierra/tierra_1grado.tif",
+        "bytes": 377909,
+        "sha256": "6759ef3042b0037d1246b90cdde82c590607c15a1ff25d8b719b73e3e0d715ee",
+        "revision": "dd6f0fcd1f9d206c1860b4a808336e196203c144",
+        "url": "https://huggingface.co/datasets/Renato-R-V/hspace-datasets/resolve/dd6f0fcd1f9d206c1860b4a808336e196203c144/tierra/tierra_1grado.tif",
+        "hash_remoto_verificado": true,
+        "geometria": {
+          "forma": [
+            180,
+            360
+          ],
+          "crs": "GEOGCS[\"WGS 84\",DATUM[\"WGS_1984\",SPHEROID[\"WGS 84\",6378137,298.257223563,AUTHORITY[\"EPSG\",\"7030\"]],AUTHORITY[\"EPSG\",\"6326\"]],PRIMEM[\"Greenwich\",0,AUTHORITY[\"EPSG\",\"8901\"]],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AXIS[\"Latitude\",NORTH],AXIS[\"Longitude\",EAST],AUTHORITY[\"EPSG\",\"4326\"]]",
+          "geotransformacion": [
+            -180.0,
+            1.0,
+            0.0,
+            90.0,
+            0.0,
+            -1.0
+          ],
+          "resolucion_grados": 1,
+          "limites": [
+            -180.0,
+            -90.0,
+            180.0,
+            90.0
+          ]
+        },
+        "bandas": [
+          {
+            "nombre": "Elevación NASADEM",
+            "etiquetas": {
+              "units": "m",
+              "vertical_datum": "EGM96"
+            }
+          },
+          {
+            "nombre": "GHI terrestre",
+            "etiquetas": {
+              "units": "W/m^2"
+            }
+          },
+          {
+            "nombre": "Albedo terrestre",
+            "etiquetas": {
+              "units": "1"
+            }
+          },
+          {
+            "nombre": "Fracción ciudades",
+            "etiquetas": {
+              "denominator": "classified pixels only",
+              "units": "1"
+            }
+          },
+          {
+            "nombre": "Fracción agua",
+            "etiquetas": {
+              "denominator": "classified pixels only",
+              "units": "1"
+            }
+          },
+          {
+            "nombre": "Cobertura vegetal",
+            "etiquetas": {
+              "denominator": "valid MOD44B 0.5 degree source cells; mean vegetated surface fraction",
+              "native_spatial_resolution": "0.5 degree CMG; aggregated to 1 degree",
+              "quantity": "vegetated_surface_fraction",
+              "source_file": "tierra/Vegetacion_tierra_MOD44B_2021_1grado.tif",
+              "units": "1"
+            }
+          }
+        ]
+      },
+      {
+        "archivo": "tierra/coberturas_tierra_1grado.tif",
+        "bytes": 27761,
+        "sha256": "ba5ea3ce777e710583db3bf59755bcf830690f78d36a9064cf6e0912cc5fca47",
+        "revision": "dd6f0fcd1f9d206c1860b4a808336e196203c144",
+        "url": "https://huggingface.co/datasets/Renato-R-V/hspace-datasets/raw/dd6f0fcd1f9d206c1860b4a808336e196203c144/tierra/coberturas_tierra_1grado.tif",
+        "hash_remoto_verificado": true,
+        "geometria": {
+          "forma": [
+            180,
+            360
+          ],
+          "crs": "GEOGCS[\"WGS 84\",DATUM[\"WGS_1984\",SPHEROID[\"WGS 84\",6378137,298.257223563,AUTHORITY[\"EPSG\",\"7030\"]],AUTHORITY[\"EPSG\",\"6326\"]],PRIMEM[\"Greenwich\",0,AUTHORITY[\"EPSG\",\"8901\"]],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AXIS[\"Latitude\",NORTH],AXIS[\"Longitude\",EAST],AUTHORITY[\"EPSG\",\"4326\"]]",
+          "geotransformacion": [
+            -180.0,
+            1.0,
+            0.0,
+            90.0,
+            0.0,
+            -1.0
+          ],
+          "resolucion_grados": 1,
+          "limites": [
+            -180.0,
+            -90.0,
+            180.0,
+            90.0
+          ]
+        },
+        "bandas": [
+          {
+            "nombre": "Cobertura NASADEM",
+            "etiquetas": {
+              "denominator": "all native pixels in analysis cell",
+              "units": "1"
+            }
+          },
+          {
+            "nombre": "Cobertura clasificada",
+            "etiquetas": {
+              "denominator": "all native pixels in analysis cell",
+              "units": "1"
+            }
+          },
+          {
+            "nombre": "Cobertura de datos de vegetación",
+            "etiquetas": {
+              "denominator": "all potential MOD44B 0.5 degree cells in analysis cell",
+              "units": "1"
+            }
+          }
+        ]
+      },
+      {
+        "archivo": "marte/prototipo_alineado/marte_1grado.tif",
+        "bytes": 724766,
+        "sha256": "751c5b930c1475a42f8e6e4abebf78d89955e736007304a26d157d0e79e7e05d",
+        "revision": "dd6f0fcd1f9d206c1860b4a808336e196203c144",
+        "url": "https://huggingface.co/datasets/Renato-R-V/hspace-datasets/resolve/dd6f0fcd1f9d206c1860b4a808336e196203c144/marte/prototipo_alineado/marte_1grado.tif",
+        "hash_remoto_verificado": true,
+        "geometria": {
+          "forma": [
+            180,
+            360
+          ],
+          "crs": "GEOGCS[\"unknown\",DATUM[\"unknown\",SPHEROID[\"unknown\",3396190,0]],PRIMEM[\"Reference meridian\",0],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AXIS[\"Latitude\",NORTH],AXIS[\"Longitude\",EAST]]",
+          "geotransformacion": [
+            -180.0,
+            1.0,
+            0.0,
+            90.0,
+            0.0,
+            -1.0
+          ],
+          "resolucion_grados": 1,
+          "limites": [
+            -180.0,
+            -90.0,
+            180.0,
+            90.0
+          ]
+        },
+        "bandas": [
+          {
+            "nombre": "Elevación MOLA",
+            "etiquetas": {
+              "source_file": "/home/renato/.cache/huggingface/hub/datasets--Renato-R-V--hspace-datasets/snapshots/63ca49407af6fd74f5a31fbe228c8042fb975202/marte/1-Mars_MGS_MOLA_DEM_mosaic_global_463m.tif",
+              "units": "m"
+            }
+          },
+          {
+            "nombre": "GHI modelado",
+            "etiquetas": {
+              "source_file": "/home/renato/.cache/huggingface/hub/datasets--Renato-R-V--hspace-datasets/snapshots/63ca49407af6fd74f5a31fbe228c8042fb975202/marte/GHI_marte.tif",
+              "units": "W/m²"
+            }
+          },
+          {
+            "nombre": "Albedo TES",
+            "etiquetas": {
+              "source_file": "/home/renato/.cache/huggingface/hub/datasets--Renato-R-V--hspace-datasets/snapshots/63ca49407af6fd74f5a31fbe228c8042fb975202/marte/Albedo_marte.tif",
+              "units": "adimensional"
+            }
+          },
+          {
+            "nombre": "Olivino OSP1",
+            "etiquetas": {
+              "source_file": "/home/renato/.cache/huggingface/hub/datasets--Renato-R-V--hspace-datasets/snapshots/63ca49407af6fd74f5a31fbe228c8042fb975202/marte/olivine_osp1_equ_map.tiff",
+              "units": "índice"
+            }
+          },
+          {
+            "nombre": "Olivino OSP2",
+            "etiquetas": {
+              "source_file": "/home/renato/.cache/huggingface/hub/datasets--Renato-R-V--hspace-datasets/snapshots/63ca49407af6fd74f5a31fbe228c8042fb975202/marte/olivine_osp2_equ_map.tiff",
+              "units": "índice"
+            }
+          },
+          {
+            "nombre": "Olivino OSP3",
+            "etiquetas": {
+              "source_file": "/home/renato/.cache/huggingface/hub/datasets--Renato-R-V--hspace-datasets/snapshots/63ca49407af6fd74f5a31fbe228c8042fb975202/marte/olivine_osp3_equ_map.tiff",
+              "units": "índice"
+            }
+          },
+          {
+            "nombre": "Piroxeno BD2000",
+            "etiquetas": {
+              "source_file": "/home/renato/.cache/huggingface/hub/datasets--Renato-R-V--hspace-datasets/snapshots/63ca49407af6fd74f5a31fbe228c8042fb975202/marte/pyroxene_bd2000_equ_map.tiff",
+              "units": "índice"
+            }
+          }
+        ]
+      },
+      {
+        "archivo": "marte/prototipo_alineado/cobertura_minerales_1grado.tif",
+        "bytes": 163620,
+        "sha256": "d94f4b0ed7764e3a20d513109ad63feae6f8a8e1e5075dc58594d027d12175e0",
+        "revision": "dd6f0fcd1f9d206c1860b4a808336e196203c144",
+        "url": "https://huggingface.co/datasets/Renato-R-V/hspace-datasets/resolve/dd6f0fcd1f9d206c1860b4a808336e196203c144/marte/prototipo_alineado/cobertura_minerales_1grado.tif",
+        "hash_remoto_verificado": true,
+        "geometria": {
+          "forma": [
+            180,
+            360
+          ],
+          "crs": "GEOGCS[\"unknown\",DATUM[\"unknown\",SPHEROID[\"unknown\",3396190,0]],PRIMEM[\"Reference meridian\",0],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AXIS[\"Latitude\",NORTH],AXIS[\"Longitude\",EAST]]",
+          "geotransformacion": [
+            -180.0,
+            1.0,
+            0.0,
+            90.0,
+            0.0,
+            -1.0
+          ],
+          "resolucion_grados": 1,
+          "limites": [
+            -180.0,
+            -90.0,
+            180.0,
+            90.0
+          ]
+        },
+        "bandas": [
+          {
+            "nombre": "Olivino OSP1",
+            "etiquetas": {
+              "source_file": "/home/renato/.cache/huggingface/hub/datasets--Renato-R-V--hspace-datasets/snapshots/63ca49407af6fd74f5a31fbe228c8042fb975202/marte/olivine_osp1_equ_map.tiff",
+              "units": "fracción válida"
+            }
+          },
+          {
+            "nombre": "Olivino OSP2",
+            "etiquetas": {
+              "source_file": "/home/renato/.cache/huggingface/hub/datasets--Renato-R-V--hspace-datasets/snapshots/63ca49407af6fd74f5a31fbe228c8042fb975202/marte/olivine_osp2_equ_map.tiff",
+              "units": "fracción válida"
+            }
+          },
+          {
+            "nombre": "Olivino OSP3",
+            "etiquetas": {
+              "source_file": "/home/renato/.cache/huggingface/hub/datasets--Renato-R-V--hspace-datasets/snapshots/63ca49407af6fd74f5a31fbe228c8042fb975202/marte/olivine_osp3_equ_map.tiff",
+              "units": "fracción válida"
+            }
+          },
+          {
+            "nombre": "Piroxeno BD2000",
+            "etiquetas": {
+              "source_file": "/home/renato/.cache/huggingface/hub/datasets--Renato-R-V--hspace-datasets/snapshots/63ca49407af6fd74f5a31fbe228c8042fb975202/marte/pyroxene_bd2000_equ_map.tiff",
+              "units": "fracción válida"
+            }
+          }
+        ]
+      }
+    ],
+    "bytes_descargados": 1321261,
+    "licencia_resultados_combinados": "CC-BY-SA-4.0",
+    "nota": "Misma malla angular; CRS, distancia física, época y definiciones radiativas diferentes por planeta",
+    "armonizacion": {
+      "celda_m": 120000.0,
+      "area_nominal_km2": 14400.0,
+      "radios_m": {
+        "tierra": 6371007.181,
+        "marte": 3396190.0
+      },
+      "operacion": "Reproyección independiente, sinusoidal esférica, media ponderada por cobertura",
+      "aproximacion": "Coberturas uniformes dentro del píxel angular de origen; área esférica, no elipsoidal exacta",
+      "borde": "El modelo excluye píxeles cuyo cuadrado no cabe entero en la huella sinusoidal"
+    }
+  },
+  "consulta": {
+    "indice": 5395,
+    "X": [
+      0.1639220372448906,
+      113.23090861116854,
+      1312.2698335459158
+    ],
+    "latitud": -6.162447691256748,
+    "longitud": 137.62522183811947,
+    "entrada_latitud": -5.4,
+    "entrada_longitud": 137.8,
+    "desplazamiento_angular_grados": 0.7820252398235128
+  },
+  "versiones": {
+    "numpy": "2.5.4",
+    "rasterio": "1.5.2",
+    "matplotlib": "3.11.2",
+    "scikit-learn": "1.9.1",
+    "scipy": "1.18.1"
+  },
+  "comprobaciones": {
+    "unidades_y_ejemplos": {
+      "albedo_entrada_1": 0.25,
+      "ghi_entrada_W_m2": 200.0,
+      "q_salida_W_m2": 150.0,
+      "energia_salida_kWh_m2_por_24h": 3.6,
+      "relieve_ejemplo_m": 141.4213562373095,
+      "invariante_a_offset_vertical": true,
+      "unidades": "(1)×W/m²=W/m²; W/m²×h/1000=kWh/m²; σ(elevación[m])=m"
+    },
+    "percentiles_con_empates": true,
+    "distancia_percentiles_independiente": true,
+    "knn_igual_a_formula_ponderada": true,
+    "recall_no_oculta_vecinos_interiores": true,
+    "particiones_disjuntas": true,
+    "referencias_independientes_de_filtros": true,
+    "ceros_validos_y_nodata_conservados": true
+  },
+  "referencias": {
+    "tierra": {
+      "qc": 7046,
+      "elegibles": 1032,
+      "filtros": [
+        {
+          "filtro": "Referencia física antes de filtros de candidatos",
+          "restantes": 7046
+        },
+        {
+          "filtro": "Vegetación conocida y baja",
+          "restantes": 1119
+        },
+        {
+          "filtro": "Agua conocida y baja",
+          "restantes": 1040
+        },
+        {
+          "filtro": "Ciudades conocidas y bajas",
+          "restantes": 1032
+        },
+        {
+          "filtro": "Cobertura de clasificación suficiente",
+          "restantes": 1032
+        },
+        {
+          "filtro": "Cobertura de vegetación suficiente",
+          "restantes": 1032
+        }
+      ]
+    },
+    "marte": {
+      "qc": 9595,
+      "elegibles": 9595,
+      "filtros": [
+        {
+          "filtro": "Referencia marciana QC",
+          "restantes": 9595
+        }
+      ]
+    }
+  },
+  "particiones": {
+    "tierra": {
+      "calibracion": 4027,
+      "desarrollo": 1479,
+      "prueba": 1540
+    },
+    "marte": {
+      "calibracion": 5769,
+      "desarrollo": 2058,
+      "prueba": 1768
+    }
+  },
+  "criterio": "Mayor Hit@k de desarrollo; empate de hasta 2 puntos porcentuales favorece percentiles por interpretación relativa. Prefiltro solo si recall >= 0.99 y mejora >= 20% en latencia, sin perder más de 1 punto porcentual de Hit@k.",
+  "seleccion": {
+    "metodo": "zscore + knn",
+    "modo": "zscore",
+    "motor": "knn",
+    "centros": 0,
+    "hit_dev": 0.9633333333333334,
+    "recall_dev": 1.0,
+    "ms_consulta": 0.0067443852458382025,
+    "hit_test": 0.99375,
+    "recall_test": 1.0,
+    "consultas_prueba_controles": 320,
+    "consultas_prueba_marte": 96,
+    "prefiltro_seguro_prueba": true
+  },
+  "comparacion": [
+    {
+      "metodo": "zscore + knn",
+      "modo": "zscore",
+      "motor": "knn",
+      "centros": 0,
+      "hit_dev": 0.9633333333333334,
+      "recall_dev": 1.0,
+      "ms_consulta": 0.0067443852458382025,
+      "hit_test": 0.99375,
+      "recall_test": 1.0,
+      "consultas_prueba_controles": 320,
+      "consultas_prueba_marte": 96,
+      "prefiltro_seguro_prueba": true
+    },
+    {
+      "metodo": "zscore + clusters (1 grupo)",
+      "modo": "zscore",
+      "motor": "clusters",
+      "centros": 1,
+      "hit_dev": 0.9466666666666667,
+      "recall_dev": 0.9333333333333332,
+      "ms_consulta": 0.31984562489621265,
+      "hit_test": null,
+      "recall_test": null
+    },
+    {
+      "metodo": "zscore + clusters (2 grupos)",
+      "modo": "zscore",
+      "motor": "clusters",
+      "centros": 2,
+      "hit_dev": 0.9633333333333334,
+      "recall_dev": 1.0,
+      "ms_consulta": 0.5957138018857222,
+      "hit_test": null,
+      "recall_test": null
+    },
+    {
+      "metodo": "percentiles + knn",
+      "modo": "percentiles",
+      "motor": "knn",
+      "centros": 0,
+      "hit_dev": 0.93,
+      "recall_dev": 1.0,
+      "ms_consulta": 0.005731125080880399,
+      "hit_test": null,
+      "recall_test": null
+    },
+    {
+      "metodo": "percentiles + clusters (1 grupo)",
+      "modo": "percentiles",
+      "motor": "clusters",
+      "centros": 1,
+      "hit_dev": 0.9066666666666666,
+      "recall_dev": 0.8322916666666668,
+      "ms_consulta": 0.2967742811961216,
+      "hit_test": null,
+      "recall_test": null
+    },
+    {
+      "metodo": "percentiles + clusters (2 grupos)",
+      "modo": "percentiles",
+      "motor": "clusters",
+      "centros": 2,
+      "hit_dev": 0.93,
+      "recall_dev": 0.9250000000000002,
+      "ms_consulta": 0.5776126666508693,
+      "hit_test": null,
+      "recall_test": null
+    }
+  ],
+  "busqueda_aplicada": {
+    "motor": "knn",
+    "modo": "zscore",
+    "fallback": false
+  },
+  "clusters_calibracion": {
+    "zscore": [
+      {
+        "k": 3,
+        "silhouette": 0.49824493902887285
+      },
+      {
+        "k": 5,
+        "silhouette": 0.35186633406242
+      },
+      {
+        "k": 8,
+        "silhouette": 0.3255651114388628
+      }
+    ],
+    "percentiles": [
+      {
+        "k": 3,
+        "silhouette": 0.359969692522169
+      },
+      {
+        "k": 5,
+        "silhouette": 0.3945209808225993
+      },
+      {
+        "k": 8,
+        "silhouette": 0.3494417519668297
+      }
+    ]
+  },
+  "ajuste_segundos": {
+    "zscore": 0.04831109300721437,
+    "percentiles": 0.04906322300666943
+  },
+  "k": 10,
+  "niveles_ruido_fraccion_iqr": [
+    0.01,
+    0.05
+  ],
+  "consultas_desarrollo_controles": 300,
+  "candidatos": [
+    {
+      "rango": 1,
+      "latitud": 29.026063844786904,
+      "longitud": 56.412171896017966,
+      "distancia": 0.13749024128853066,
+      "albedo": 0.169921875,
+      "q_abs_W_m2": 201.92652768957285,
+      "relieve_m": 585.6613849604546,
+      "vegetacion": 0.12727644177151481,
+      "agua": 0.0,
+      "ciudades": 0.00087346107757016,
+      "elevacion_m_contexto": 2045.6609292116784,
+      "ghi_W_m2_contexto": 243.26207571073246,
+      "coste_cuadrado_albedo": 0.002310239661469377,
+      "coste_cuadrado_q_abs": 0.015088633632953152,
+      "coste_cuadrado_relieve": 0.0015046931551558583
+    },
+    {
+      "rango": 2,
+      "latitud": 27.94687913407517,
+      "longitud": 57.06014901284084,
+      "distancia": 0.15490921981923078,
+      "albedo": 0.16815673312677376,
+      "q_abs_W_m2": 202.6105209575604,
+      "relieve_m": 637.9495395616378,
+      "vegetacion": 0.0951625962626159,
+      "agua": 0.027911468023913158,
+      "ciudades": 0.00630467310550616,
+      "elevacion_m_contexto": 922.5591745050388,
+      "ghi_W_m2_contexto": 243.56814441636686,
+      "coste_cuadrado_albedo": 0.0013645117585741678,
+      "coste_cuadrado_q_abs": 0.01794849341267723,
+      "coste_cuadrado_relieve": 0.004683861213751382
+    },
+    {
+      "rango": 3,
+      "latitud": 29.026063844786904,
+      "longitud": 57.64637346294935,
+      "distancia": 0.17997580608202865,
+      "albedo": 0.1608838758605879,
+      "q_abs_W_m2": 202.42661922115116,
+      "relieve_m": 544.5430349600055,
+      "vegetacion": 0.14465567518074895,
+      "agua": 0.0,
+      "ciudades": 0.0005758970733698878,
+      "elevacion_m_contexto": 1826.1982568254907,
+      "ghi_W_m2_contexto": 241.23790903047848,
+      "coste_cuadrado_albedo": 7.923451007409434e-05,
+      "coste_cuadrado_q_abs": 0.01715519931147575,
+      "coste_cuadrado_relieve": 0.01515685695332613
+    },
+    {
+      "rango": 4,
+      "latitud": 33.34280268763385,
+      "longitud": 62.92134912931655,
+      "distancia": 0.1896373077677337,
+      "albedo": 0.19224670168165553,
+      "q_abs_W_m2": 194.32465921550462,
+      "relieve_m": 613.3588065197757,
+      "vegetacion": 0.18487080186417,
+      "agua": 0.0,
+      "ciudades": 0.003327703281450678,
+      "elevacion_m_contexto": 1648.803439245105,
+      "ghi_W_m2_contexto": 240.57426892600463,
+      "coste_cuadrado_albedo": 0.035637092695830125,
+      "coste_cuadrado_q_abs": 8.672466972601713e-07,
+      "coste_cuadrado_relieve": 0.0003243485548667702
+    },
+    {
+      "rango": 5,
+      "latitud": 27.94687913407517,
+      "longitud": 58.28179958841867,
+      "distancia": 0.2046980878246727,
+      "albedo": 0.18547174201186853,
+      "q_abs_W_m2": 199.78547800224348,
+      "relieve_m": 549.3574892810241,
+      "vegetacion": 0.0701282640139847,
+      "agua": 4.686408875305876e-05,
+      "ciudades": 0.0006721958090125976,
+      "elevacion_m_contexto": 790.7681386133145,
+      "ghi_W_m2_contexto": 245.27752848711427,
+      "coste_cuadrado_albedo": 0.02133803885056,
+      "coste_cuadrado_q_abs": 0.007739966024445617,
+      "coste_cuadrado_relieve": 0.012823302284071803
+    },
+    {
+      "rango": 6,
+      "latitud": 31.184433266210384,
+      "longitud": 67.7497275019296,
+      "distancia": 0.23809765291168833,
+      "albedo": 0.1904296725988388,
+      "q_abs_W_m2": 203.20728127040246,
+      "relieve_m": 637.6496060752737,
+      "vegetacion": 0.11534643498406967,
+      "agua": 0.0,
+      "ciudades": 0.0014576122355431426,
+      "elevacion_m_contexto": 2121.9462714755073,
+      "ghi_W_m2_contexto": 251.00633557399203,
+      "coste_cuadrado_albedo": 0.03144422450246145,
+      "coste_cuadrado_q_abs": 0.020646219413308093,
+      "coste_cuadrado_relieve": 0.00460004840628526
+    },
+    {
+      "rango": 7,
+      "latitud": 30.105248555498644,
+      "longitud": 69.49279571447288,
+      "distancia": 0.2599119885247996,
+      "albedo": 0.1784674824028561,
+      "q_abs_W_m2": 191.16653934718605,
+      "relieve_m": 718.336336594221,
+      "vegetacion": 0.19887010935673927,
+      "agua": 0.0,
+      "ciudades": 3.4936981025998324e-05,
+      "elevacion_m_contexto": 1206.0665011665774,
+      "ghi_W_m2_contexto": 232.69503671786325,
+      "coste_cuadrado_albedo": 0.010389265519900204,
+      "coste_cuadrado_q_abs": 0.0027404222300536395,
+      "coste_cuadrado_relieve": 0.05442455402896172
+    },
+    {
+      "rango": 8,
+      "latitud": 27.94687913407517,
+      "longitud": 66.8333536174635,
+      "distancia": 0.27020458756583104,
+      "albedo": 0.19323851394310856,
+      "q_abs_W_m2": 198.57467761337864,
+      "relieve_m": 519.6756499168401,
+      "vegetacion": 0.14217173070177835,
+      "agua": 0.0009050762055967924,
+      "ciudades": 0.00021561287349437469,
+      "elevacion_m_contexto": 1300.5521945037995,
+      "ghi_W_m2_contexto": 246.13802349927187,
+      "coste_cuadrado_albedo": 0.0380364144085662,
+      "coste_cuadrado_q_abs": 0.004659955943814824,
+      "coste_cuadrado_relieve": 0.030314148789239853
+    },
+    {
+      "rango": 9,
+      "latitud": 32.26361797692211,
+      "longitud": 68.5432382765215,
+      "distancia": 0.2976750124678242,
+      "albedo": 0.1920902258032059,
+      "q_abs_W_m2": 190.94885954392868,
+      "relieve_m": 713.8545254830958,
+      "vegetacion": 0.13541031442873708,
+      "agua": 0.0,
+      "ciudades": 0.0,
+      "elevacion_m_contexto": 2173.04353036169,
+      "ghi_W_m2_contexto": 236.34923804921877,
+      "coste_cuadrado_albedo": 0.035265695598704024,
+      "coste_cuadrado_q_abs": 0.0031240405224610985,
+      "coste_cuadrado_relieve": 0.05022067692655417
+    },
+    {
+      "rango": 10,
+      "latitud": 33.34280268763385,
+      "longitud": 52.5867682378746,
+      "distancia": 0.30156649165913346,
+      "albedo": 0.17535320750805614,
+      "q_abs_W_m2": 192.9697629459501,
+      "relieve_m": 463.550636111267,
+      "vegetacion": 0.10361773916793394,
+      "agua": 0.0,
+      "ciudades": 0.0024122721062405116,
+      "elevacion_m_contexto": 1486.6909337604109,
+      "ghi_W_m2_contexto": 234.0029267109958,
+      "coste_cuadrado_albedo": 0.006773048640285604,
+      "coste_cuadrado_q_abs": 0.0005285636547095749,
+      "coste_cuadrado_relieve": 0.08364073659660304
+    }
+  ],
+  "licencia": "CC-BY-SA-4.0",
+  "advertencia": "Distancia no es probabilidad, equivalencia física, seguridad de aterrizaje ni aptitud para misiones"
+}

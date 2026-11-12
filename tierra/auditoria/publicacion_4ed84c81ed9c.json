@@ -1,0 +1,226 @@
+{
+  "commit": "4ed84c81ed9c5f16fbd65a19bfe4485f5bd38b72",
+  "url": "https://huggingface.co/datasets/Renato-R-V/hspace-datasets/commit/4ed84c81ed9c5f16fbd65a19bfe4485f5bd38b72",
+  "productos": [
+    {
+      "archivo": "tierra/tierra_1grado.tif",
+      "bytes": 377909,
+      "sha256": "6759ef3042b0037d1246b90cdde82c590607c15a1ff25d8b719b73e3e0d715ee",
+      "crs": "EPSG:4326",
+      "dimensiones": [
+        360,
+        180
+      ],
+      "geotransform": [
+        -180.0,
+        1.0,
+        0.0,
+        90.0,
+        0.0,
+        -1.0
+      ],
+      "tipo": [
+        "float32",
+        "float32",
+        "float32",
+        "float32",
+        "float32",
+        "float32"
+      ],
+      "nodata": "NaN",
+      "bandas": [
+        {
+          "banda": 1,
+          "nombre": "Elevación NASADEM",
+          "unidad": "m EGM96",
+          "validos": 14520,
+          "min": -45.47758865356445,
+          "max": 5409.13720703125,
+          "media": 558.1450803818038,
+          "tags": {
+            "units": "m",
+            "vertical_datum": "EGM96"
+          }
+        },
+        {
+          "banda": 2,
+          "nombre": "GHI terrestre",
+          "unidad": "W/m^2",
+          "validos": 64800,
+          "min": 55.25,
+          "max": 307.0,
+          "media": 163.14260534298273,
+          "tags": {
+            "units": "W/m^2"
+          }
+        },
+        {
+          "banda": 3,
+          "nombre": "Albedo terrestre",
+          "unidad": "1",
+          "validos": 64800,
+          "min": 0.02001953125,
+          "max": 0.8007811903953552,
+          "media": 0.2470339859932385,
+          "tags": {
+            "units": "1"
+          }
+        },
+        {
+          "banda": 4,
+          "nombre": "Fracción ciudades",
+          "unidad": "fracción",
+          "validos": 59194,
+          "min": 0.0,
+          "max": 0.41420137882232666,
+          "media": 0.0015053847275161604,
+          "tags": {
+            "denominator": "classified pixels only",
+            "units": "1"
+          }
+        },
+        {
+          "banda": 5,
+          "nombre": "Fracción agua",
+          "unidad": "fracción",
+          "validos": 59194,
+          "min": 0.0,
+          "max": 1.0,
+          "media": 0.7439710133401859,
+          "tags": {
+            "denominator": "classified pixels only",
+            "units": "1"
+          }
+        },
+        {
+          "banda": 6,
+          "nombre": "Cobertura vegetal",
+          "unidad": "fracción",
+          "validos": 17673,
+          "min": 0.0,
+          "max": 0.9900000095367432,
+          "media": 0.5219731602607195,
+          "tags": {
+            "denominator": "valid MOD44B 0.5 degree source cells; mean vegetated surface fraction",
+            "native_spatial_resolution": "0.5 degree CMG; aggregated to 1 degree",
+            "quantity": "vegetated_surface_fraction",
+            "source_file": "tierra/Vegetacion_tierra_MOD44B_2021_1grado.tif",
+            "units": "1"
+          }
+        }
+      ],
+      "tags": {
+        "attribution": "NASA POWER; NASA/JPL-Caltech NASADEM; Rolf Simoes/OpenGeoHub (2023), doi:10.5281/zenodo.8367523, MODIS MCD12Q1.061; Made with Natural Earth; NASA MOD44B 2021, ICDC Universität Hamburg CMG",
+        "attribution_note": "Mixed derived product contains CC-BY-SA-4.0 mask fractions; share alike",
+        "classification_year": "2021",
+        "climatology_period": "2001-2025",
+        "fractions_note": "City and water fractions are among classified IGBP pixels; vegetation is physical vegetated surface fraction from MOD44B; source coverage in companion raster",
+        "grid": "Earth WGS84; 1 degree; 360x180; native POWER scale",
+        "license": "CC-BY-SA-4.0",
+        "source_catalog_sha256": "403311883a71a012eff139008f70a0e16daa03c065e3cac79dbd416994ff9c1d",
+        "source_dataset": "Renato-R-V/hspace-datasets",
+        "source_files": "{\"dem\": \"tierra/NASADEM_tierra_1grado.tif\", \"ghi\": \"tierra/GHI_tierra.tif\", \"albedo\": \"tierra/Albedo_tierra.tif\", \"mascaras\": \"tierra/Fracciones_mascaras_tierra_MODIS_2021_1grado.tif\", \"vegetacion\": \"tierra/Vegetacion_tierra_MOD44B_2021_1grado.tif\"}",
+        "source_revision": "750ea954c9ec08674ee4e53bbeae7fb080813933",
+        "unknown_note": "NaN remains unknown; zero coverage is a valid fraction",
+        "vegetation_cycle_year": "2021",
+        "vegetation_native_resolution": "0.5 degree CMG; not 15 arcsec",
+        "vegetation_period_end": "2022-03-04",
+        "vegetation_period_start": "2021-03-05",
+        "vegetation_quantity": "vegetated_surface_fraction",
+        "vegetation_scope_note": "Mean over valid MOD44B retrievals, not necessarily full CMG cell area; vegetation data coverage counts known CMG cells, not within-cell retrieval quality",
+        "AREA_OR_POINT": "Area"
+      },
+      "git_blob_sha1": "ed272d920451b9e5df8d99c4904e0fb653b52f12"
+    },
+    {
+      "archivo": "tierra/coberturas_tierra_1grado.tif",
+      "bytes": 27761,
+      "sha256": "ba5ea3ce777e710583db3bf59755bcf830690f78d36a9064cf6e0912cc5fca47",
+      "crs": "EPSG:4326",
+      "dimensiones": [
+        360,
+        180
+      ],
+      "geotransform": [
+        -180.0,
+        1.0,
+        0.0,
+        90.0,
+        0.0,
+        -1.0
+      ],
+      "tipo": [
+        "float32",
+        "float32",
+        "float32"
+      ],
+      "nodata": "NaN",
+      "bandas": [
+        {
+          "banda": 1,
+          "nombre": "Cobertura NASADEM",
+          "unidad": "fracción",
+          "validos": 64800,
+          "min": 0.0,
+          "max": 1.0,
+          "media": 0.22407407407407406,
+          "tags": {
+            "denominator": "all native pixels in analysis cell",
+            "units": "1"
+          }
+        },
+        {
+          "banda": 2,
+          "nombre": "Cobertura clasificada",
+          "unidad": "fracción",
+          "validos": 64800,
+          "min": 0.0,
+          "max": 1.0,
+          "media": 0.9066449741157714,
+          "tags": {
+            "denominator": "all native pixels in analysis cell",
+            "units": "1"
+          }
+        },
+        {
+          "banda": 3,
+          "nombre": "Cobertura de datos de vegetación",
+          "unidad": "fracción",
+          "validos": 64800,
+          "min": 0.0,
+          "max": 1.0,
+          "media": 0.2526003086419753,
+          "tags": {
+            "denominator": "all potential MOD44B 0.5 degree cells in analysis cell",
+            "units": "1"
+          }
+        }
+      ],
+      "tags": {
+        "attribution": "NASA POWER; NASA/JPL-Caltech NASADEM; Rolf Simoes/OpenGeoHub (2023), doi:10.5281/zenodo.8367523, MODIS MCD12Q1.061; Made with Natural Earth; NASA MOD44B 2021, ICDC Universität Hamburg CMG",
+        "attribution_note": "Mixed derived product contains CC-BY-SA-4.0 mask fractions; share alike",
+        "classification_year": "2021",
+        "climatology_period": "2001-2025",
+        "fractions_note": "Valid or classified source cell counts divided by all potential cells of each source grid",
+        "grid": "Earth WGS84; 1 degree; 360x180; native POWER scale",
+        "license": "CC-BY-SA-4.0",
+        "source_catalog_sha256": "403311883a71a012eff139008f70a0e16daa03c065e3cac79dbd416994ff9c1d",
+        "source_dataset": "Renato-R-V/hspace-datasets",
+        "source_files": "{\"dem\": \"tierra/NASADEM_tierra_1grado.tif\", \"ghi\": \"tierra/GHI_tierra.tif\", \"albedo\": \"tierra/Albedo_tierra.tif\", \"mascaras\": \"tierra/Fracciones_mascaras_tierra_MODIS_2021_1grado.tif\", \"vegetacion\": \"tierra/Vegetacion_tierra_MOD44B_2021_1grado.tif\"}",
+        "source_revision": "750ea954c9ec08674ee4e53bbeae7fb080813933",
+        "unknown_note": "NaN remains unknown; zero coverage is a valid fraction",
+        "vegetation_cycle_year": "2021",
+        "vegetation_native_resolution": "0.5 degree CMG; not 15 arcsec",
+        "vegetation_period_end": "2022-03-04",
+        "vegetation_period_start": "2021-03-05",
+        "vegetation_quantity": "vegetated_surface_fraction",
+        "vegetation_scope_note": "Mean over valid MOD44B retrievals, not necessarily full CMG cell area; vegetation data coverage counts known CMG cells, not within-cell retrieval quality",
+        "AREA_OR_POINT": "Area"
+      },
+      "git_blob_sha1": "00b05461e128a1241ed4a4b8dda2789006a66dd7"
+    }
+  ],
+  "integridad_remota_y_tamano_verificados": true,
+  "metodo_integridad": "SHA256 LFS o identificador Git de contenido; SHA256 local cotejado con la auditoría científica",
+  "eliminacion_local_solicitada": true
+}

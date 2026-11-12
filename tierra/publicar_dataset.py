@@ -6,7 +6,8 @@ Uso (desde la raíz):
 
 El catálogo guarda hashes, unidades, estadísticas completas y georreferencias.
 Los GeoTIFF grandes se verifican mediante el SHA256 LFS que confirma HF, sin
-descargar otra copia. Los archivos pequeños se verifican leyendo su contenido.
+descargar otra copia. Los archivos pequeños usan su identificador Git de
+contenido, además del SHA256 local cotejado con la auditoría científica.
 """
 
 import argparse
@@ -51,10 +52,14 @@ def especificacion(nombre, count):
         return [(0, 15, "bits: ciudad=1; agua=2; vegetación=4; océano suplementario=8")]
     if nombre.startswith("Fracciones_mascaras_tierra_") and count == 4:
         return [(0, 1, "fracción")] * 4
+    if nombre == "Vegetacion_tierra_MOD44B_2021_0p5grado.tif" and count == 1:
+        return [(0, 1, "proporción de superficie vegetada")]
+    if nombre == "Vegetacion_tierra_MOD44B_2021_1grado.tif" and count == 2:
+        return [(0, 1, "proporción de superficie vegetada"), (0, 1, "fracción de celdas fuente válidas")]
     if nombre == "tierra_1grado.tif" and count == 6:
         return [(-500, 9000, "m EGM96"), (0, 600, "W/m^2"), (0, 1, "1")] + [(0, 1, "fracción")] * 3
-    if nombre == "coberturas_tierra_1grado.tif" and count == 2:
-        return [(0, 1, "fracción")] * 2
+    if nombre == "coberturas_tierra_1grado.tif" and count == 3:
+        return [(0, 1, "fracción")] * 3
     raise ValueError(f"Producto no reconocido: {nombre}; añadir su especificación antes de publicarlo")
 
 
@@ -71,7 +76,11 @@ def hash_auditado(nombre):
         if report.get("producto_completo") is not True:
             raise ValueError("NASADEM todavía no tiene una auditoría global completa")
         return report["sha256_tif" if "15arcsec" in nombre else "sha256_resumen"]
-    if nombre.startswith(("Mascaras_", "Fracciones_mascaras_")):
+    if nombre.startswith("Vegetacion_tierra_"):
+        report = json.loads((ROOT / "auditoria/vegetacion.json").read_text())
+        if report.get("validado") is not True:
+            raise ValueError("La vegetación todavía no tiene una auditoría completa")
+    elif nombre.startswith(("Mascaras_", "Fracciones_mascaras_")):
         report = json.loads((ROOT / "auditoria/mascaras.json").read_text())
         if report.get("validado") is not True:
             raise ValueError("Las máscaras todavía no tienen una auditoría completa")
@@ -86,7 +95,7 @@ def auditar(path):
     path = Path(path)
     stats = []
     with rio.Env(GDAL_PAM_ENABLED="NO"), rio.open(path) as src:
-        step = 1 / 240 if "15arcsec" in path.name else 1
+        step = 1 / 240 if "15arcsec" in path.name else .5 if "0p5grado" in path.name else 1
         expected = (round(180 / step), round(360 / step))
         if (src.crs != rio.crs.CRS.from_epsg(4326) or src.shape != expected
                 or not src.transform.almost_equals(from_origin(-180, 90, step, step))):
@@ -123,6 +132,9 @@ def auditar(path):
             "tipo": list(src.dtypes), "nodata": "NaN" if np.isnan(src.nodata) else src.nodata,
             "bandas": stats, "tags": src.tags(),
         }
+        if path.stat().st_size <= 4 * 1024 * 1024:
+            raw = path.read_bytes()
+            result["git_blob_sha1"] = hashlib.sha1(b"blob " + str(len(raw)).encode() + b"\0" + raw).hexdigest()
     print(f"Validado completo: {path.name}", flush=True)
     return result
 
@@ -137,6 +149,11 @@ def verificar_remoto(api, repo, records, revision):
         if info.lfs:
             if info.lfs.sha256 != record["sha256"]:
                 raise ValueError(f"SHA256 remoto distinto: {record['archivo']}")
+        elif record.get("git_blob_sha1"):
+            # Los TIFF pequeños pueden almacenarse como objetos Git, sin LFS.
+            # Su identificador verifica el contenido sin repetir descargas HTTP.
+            if info.blob_id != record["git_blob_sha1"]:
+                raise ValueError(f"Objeto Git remoto distinto: {record['archivo']}")
         else:
             digest = hashlib.sha256()
             with urlopen(hf_hub_url(repo, record["archivo"], repo_type="dataset", revision=revision), timeout=120) as f:
@@ -165,6 +182,7 @@ def publicar(paths, eliminar=False, repo=REPO):
     catalog["notas"] = [
         "15 segundos de arco equivalen a unos 464 m en el ecuador; ancho este-oeste decrece con la latitud.",
         "GHI y albedo POWER son nativos a 1 grado; no tienen resolución local de 464 m.",
+        "Cobertura vegetal física MOD44B/ICDC: 0..1, malla fuente 0.5 grados y resumen a 1 grado; distinta de los códigos de máscara IGBP.",
         "Las capas mantienen fechas y definiciones físicas diferentes; consultar documentación por producto.",
     ]
     candidate = ROOT / ".catalogo_publicacion.json"
@@ -184,7 +202,9 @@ def publicar(paths, eliminar=False, repo=REPO):
     receipt.parent.mkdir(parents=True, exist_ok=True)
     receipt.write_text(json.dumps({
         "commit": result.oid, "url": result.commit_url, "productos": records,
-        "remoto_sha256_y_tamano_verificados": True, "eliminacion_local_solicitada": eliminar,
+        "integridad_remota_y_tamano_verificados": True,
+        "metodo_integridad": "SHA256 LFS o identificador Git de contenido; SHA256 local cotejado con la auditoría científica",
+        "eliminacion_local_solicitada": eliminar,
     }, ensure_ascii=False, indent=2, allow_nan=False) + "\n")
     if eliminar:
         for path in paths:

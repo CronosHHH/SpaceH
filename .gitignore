@@ -30,3 +30,6 @@
 
 # Metadatos auxiliares generados por GDAL/Rasterio
 *.aux.xml
+
+# Caché Python del prototipo de análogos
+/analogos/__pycache__/

@@ -3,19 +3,19 @@
   "productos": [
     {
       "archivo": "tierra_1grado.tif",
-      "sha256": "df7df23d493be7c77e3c0683b3267dac3a958ca77d40980547858921586982fc",
+      "sha256": "6759ef3042b0037d1246b90cdde82c590607c15a1ff25d8b719b73e3e0d715ee",
       "bandas": 6,
-      "bytes": 396456
+      "bytes": 377909
     },
     {
       "archivo": "coberturas_tierra_1grado.tif",
-      "sha256": "33fef62e8ecc24f4716ee9df9e92357d0d311ba673318363fa5dd234604cac06",
-      "bandas": 2,
-      "bytes": 18935
+      "sha256": "ba5ea3ce777e710583db3bf59755bcf830690f78d36a9064cf6e0912cc5fca47",
+      "bandas": 3,
+      "bytes": 27761
     }
   ],
-  "revision_hf_fuentes": "1fee6799d0cc59f52434db6cd6054aec30aaca68",
-  "sha256_catalogo_fuentes": "43a1e4c25f2d72a3d95de4608ef21f2817bd011703b17e5d15fd7acca748a46b",
+  "revision_hf_fuentes": "750ea954c9ec08674ee4e53bbeae7fb080813933",
+  "sha256_catalogo_fuentes": "403311883a71a012eff139008f70a0e16daa03c065e3cac79dbd416994ff9c1d",
   "fuentes": {
     "dem": {
       "archivo": "tierra/NASADEM_tierra_1grado.tif",
@@ -32,6 +32,10 @@
     "mascaras": {
       "archivo": "tierra/Fracciones_mascaras_tierra_MODIS_2021_1grado.tif",
       "sha256": "28cc0672742f1281cc0f6e4f5be79a7a348570ae05b01d1a5d1077a1d3774929"
+    },
+    "vegetacion": {
+      "archivo": "tierra/Vegetacion_tierra_MOD44B_2021_1grado.tif",
+      "sha256": "368c58811f82c1de17378060f2174544e8d049185f514bc1e9f85a493a7418a7"
     }
   },
   "crs": "EPSG:4326",
@@ -52,14 +56,25 @@
     180,
     360
   ],
-  "celdas_seis_variables_conocidas": 14520,
+  "celdas_seis_variables_conocidas": 13617,
   "celdas_validas_por_variable": {
     "Elevación NASADEM": 14520,
     "GHI terrestre": 64800,
     "Albedo terrestre": 64800,
     "Fracción ciudades": 59194,
     "Fracción agua": 59194,
-    "Fracción vegetación": 59194
+    "Cobertura vegetal": 17673
+  },
+  "vegetacion": {
+    "quantity": "vegetated_surface_fraction",
+    "unidad": "1",
+    "resolucion_fuente_grados": 0.5,
+    "ciclo_fuente": "2021",
+    "periodo_inicio": "2021-03-05",
+    "periodo_fin": "2022-03-04",
+    "min": 0.0,
+    "max": 0.9900000095367432,
+    "celdas_con_valores_intermedios": 13055
   },
   "coberturas": {
     "Cobertura NASADEM": {
@@ -71,6 +86,11 @@
       "min": 0.0,
       "max": 1.0,
       "celdas_cobertura_positiva": 59194
+    },
+    "Cobertura de datos de vegetación": {
+      "min": 0.0,
+      "max": 1.0,
+      "celdas_cobertura_positiva": 17673
     }
   },
   "checks": {
@@ -80,6 +100,7 @@
     "cobertura_y_nodata_coherentes": true,
     "periodo_radiacion_coincidente": true,
     "sha256_fuentes_verificados": true,
+    "vegetacion_continua_0_1": true,
     "licencia_y_atribucion_conservadas": true
   },
   "licencia": "CC-BY-SA-4.0"

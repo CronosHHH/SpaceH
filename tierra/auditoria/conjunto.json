@@ -1,11 +1,13 @@
 {
-  "fecha_utc": "2026-11-11T15:34:42.458596+00:00",
+  "fecha_utc": "2026-11-11T19:33:08.746861+00:00",
   "compatible": true,
+  "revision_hf_referencias": "750ea954c9ec08674ee4e53bbeae7fb080813933",
   "productos_1grado": [
     "GHI_tierra.tif",
     "Albedo_tierra.tif",
     "NASADEM_tierra_1grado.tif",
-    "Fracciones_mascaras_tierra_MODIS_2021_1grado.tif"
+    "Fracciones_mascaras_tierra_MODIS_2021_1grado.tif",
+    "Vegetacion_tierra_MOD44B_2021_1grado.tif"
   ],
   "productos_15arcsec_misma_malla": [
     "NASADEM_tierra_15arcsec.tif",
@@ -15,18 +17,31 @@
     "GHI_tierra.tif": "427aaebc7a0e149cecac7ed36526aa4d9dc07b857c5151f7471d14239dc46e38",
     "Albedo_tierra.tif": "323591124eb560eb93ba01561e44a06d057db5e7b8d9c2e71cd963582726ab9e",
     "NASADEM_tierra_1grado.tif": "28de53c8cf825f14fcd56f7cf8973d48c9c72630c3a709484815313b6a450326",
-    "Fracciones_mascaras_tierra_MODIS_2021_1grado.tif": "28cc0672742f1281cc0f6e4f5be79a7a348570ae05b01d1a5d1077a1d3774929"
+    "Fracciones_mascaras_tierra_MODIS_2021_1grado.tif": "28cc0672742f1281cc0f6e4f5be79a7a348570ae05b01d1a5d1077a1d3774929",
+    "Vegetacion_tierra_MOD44B_2021_1grado.tif": "368c58811f82c1de17378060f2174544e8d049185f514bc1e9f85a493a7418a7"
   },
   "celdas_1grado": 64800,
-  "celdas_conjuntas": 14520,
+  "celdas_conjuntas": 13617,
   "elevacion_celdas_validas": 14520,
   "clasificacion_celdas_con_datos": 59194,
+  "vegetacion_celdas_con_datos": 17673,
+  "vegetacion_valores_intermedios": true,
+  "vegetacion_rango_1grado": [
+    0.0,
+    0.9900000095367432
+  ],
+  "vegetacion_nativa": {
+    "archivo": "Vegetacion_tierra_MOD44B_2021_0p5grado.tif",
+    "resolucion_grados": 0.5,
+    "cantidad": "vegetated_surface_fraction"
+  },
   "rangos_y_mascaras_correctos": true,
   "fracciones_exclusivas_correctas": true,
   "limitaciones": [
     "POWER: climatología anual 2001–2025 a 1°; no tiene resolución climática de 463 m.",
     "NASADEM: alturas sobre EGM96, principalmente SRTM de 2000; cobertura limitada.",
     "Máscaras: clasificación MODIS 2021 y océano cartográfico Natural Earth; consultar su cobertura.",
+    "Vegetación: cobertura física MOD44B/ICDC, ciclo marzo 2021 a marzo 2022, malla nativa 0.5°; no códigos IGBP ni NDVI.",
     "Compatibilidad geométrica y de unidades para exploración; no son observaciones simultáneas ni equivalentes a los modelos marcianos."
   ]
 }

@@ -350,8 +350,8 @@
     },
     "tierra_1grado.tif": {
       "archivo": "tierra/tierra_1grado.tif",
-      "bytes": 396456,
-      "sha256": "82554fdd7bbe6f00bef8fe72e6127c089716fc5803248ccab398c5cb42feab3b",
+      "bytes": 377909,
+      "sha256": "6759ef3042b0037d1246b90cdde82c590607c15a1ff25d8b719b73e3e0d715ee",
       "crs": "EPSG:4326",
       "dimensiones": [
         360,
@@ -440,38 +440,48 @@
         },
         {
           "banda": 6,
-          "nombre": "Fracción vegetación",
+          "nombre": "Cobertura vegetal",
           "unidad": "fracción",
-          "validos": 59194,
+          "validos": 17673,
           "min": 0.0,
-          "max": 1.0,
-          "media": 0.20746996219342242,
+          "max": 0.9900000095367432,
+          "media": 0.5219731602607195,
           "tags": {
-            "denominator": "classified pixels only",
+            "denominator": "valid MOD44B 0.5 degree source cells; mean vegetated surface fraction",
+            "native_spatial_resolution": "0.5 degree CMG; aggregated to 1 degree",
+            "quantity": "vegetated_surface_fraction",
+            "source_file": "tierra/Vegetacion_tierra_MOD44B_2021_1grado.tif",
             "units": "1"
           }
         }
       ],
       "tags": {
-        "attribution": "NASA POWER; NASA/JPL-Caltech NASADEM; Rolf Simoes/OpenGeoHub (2023), doi:10.5281/zenodo.8367523, MODIS MCD12Q1.061; Made with Natural Earth",
+        "attribution": "NASA POWER; NASA/JPL-Caltech NASADEM; Rolf Simoes/OpenGeoHub (2023), doi:10.5281/zenodo.8367523, MODIS MCD12Q1.061; Made with Natural Earth; NASA MOD44B 2021, ICDC Universität Hamburg CMG",
         "attribution_note": "Mixed derived product contains CC-BY-SA-4.0 mask fractions; share alike",
         "classification_year": "2021",
         "climatology_period": "2001-2025",
-        "fractions_note": "Thematic fractions among classified pixels, not subpixel biophysical abundance; coverage in companion raster",
+        "fractions_note": "City and water fractions are among classified IGBP pixels; vegetation is physical vegetated surface fraction from MOD44B; source coverage in companion raster",
         "grid": "Earth WGS84; 1 degree; 360x180; native POWER scale",
         "license": "CC-BY-SA-4.0",
-        "source_catalog_sha256": "27dcbe27d11e87253dde495a5cb7c880c91d1d42dbcdfcd50ce11f133f50f4c5",
+        "source_catalog_sha256": "403311883a71a012eff139008f70a0e16daa03c065e3cac79dbd416994ff9c1d",
         "source_dataset": "Renato-R-V/hspace-datasets",
-        "source_files": "{\"dem\": \"tierra/NASADEM_tierra_1grado.tif\", \"ghi\": \"tierra/GHI_tierra.tif\", \"albedo\": \"tierra/Albedo_tierra.tif\", \"mascaras\": \"tierra/Fracciones_mascaras_tierra_MODIS_2021_1grado.tif\"}",
-        "source_revision": "7ba36b3776cbd487e0ce444e4124d82e5a02784a",
+        "source_files": "{\"dem\": \"tierra/NASADEM_tierra_1grado.tif\", \"ghi\": \"tierra/GHI_tierra.tif\", \"albedo\": \"tierra/Albedo_tierra.tif\", \"mascaras\": \"tierra/Fracciones_mascaras_tierra_MODIS_2021_1grado.tif\", \"vegetacion\": \"tierra/Vegetacion_tierra_MOD44B_2021_1grado.tif\"}",
+        "source_revision": "750ea954c9ec08674ee4e53bbeae7fb080813933",
         "unknown_note": "NaN remains unknown; zero coverage is a valid fraction",
+        "vegetation_cycle_year": "2021",
+        "vegetation_native_resolution": "0.5 degree CMG; not 15 arcsec",
+        "vegetation_period_end": "2022-03-04",
+        "vegetation_period_start": "2021-03-05",
+        "vegetation_quantity": "vegetated_surface_fraction",
+        "vegetation_scope_note": "Mean over valid MOD44B retrievals, not necessarily full CMG cell area; vegetation data coverage counts known CMG cells, not within-cell retrieval quality",
         "AREA_OR_POINT": "Area"
-      }
+      },
+      "git_blob_sha1": "ed272d920451b9e5df8d99c4904e0fb653b52f12"
     },
     "coberturas_tierra_1grado.tif": {
       "archivo": "tierra/coberturas_tierra_1grado.tif",
-      "bytes": 18935,
-      "sha256": "e684a3cf91a768f0b9843dba2bdd4a9bc40b0ed20bef1990e2a3045dde514281",
+      "bytes": 27761,
+      "sha256": "ba5ea3ce777e710583db3bf59755bcf830690f78d36a9064cf6e0912cc5fca47",
       "crs": "EPSG:4326",
       "dimensiones": [
         360,
@@ -486,6 +496,7 @@
         -1.0
       ],
       "tipo": [
+        "float32",
         "float32",
         "float32"
       ],
@@ -516,29 +527,189 @@
             "denominator": "all native pixels in analysis cell",
             "units": "1"
           }
+        },
+        {
+          "banda": 3,
+          "nombre": "Cobertura de datos de vegetación",
+          "unidad": "fracción",
+          "validos": 64800,
+          "min": 0.0,
+          "max": 1.0,
+          "media": 0.2526003086419753,
+          "tags": {
+            "denominator": "all potential MOD44B 0.5 degree cells in analysis cell",
+            "units": "1"
+          }
         }
       ],
       "tags": {
-        "attribution": "NASA POWER; NASA/JPL-Caltech NASADEM; Rolf Simoes/OpenGeoHub (2023), doi:10.5281/zenodo.8367523, MODIS MCD12Q1.061; Made with Natural Earth",
+        "attribution": "NASA POWER; NASA/JPL-Caltech NASADEM; Rolf Simoes/OpenGeoHub (2023), doi:10.5281/zenodo.8367523, MODIS MCD12Q1.061; Made with Natural Earth; NASA MOD44B 2021, ICDC Universität Hamburg CMG",
         "attribution_note": "Mixed derived product contains CC-BY-SA-4.0 mask fractions; share alike",
         "classification_year": "2021",
         "climatology_period": "2001-2025",
-        "fractions_note": "Valid or classified pixel counts divided by all native pixels in each analysis cell",
+        "fractions_note": "Valid or classified source cell counts divided by all potential cells of each source grid",
         "grid": "Earth WGS84; 1 degree; 360x180; native POWER scale",
         "license": "CC-BY-SA-4.0",
-        "source_catalog_sha256": "27dcbe27d11e87253dde495a5cb7c880c91d1d42dbcdfcd50ce11f133f50f4c5",
+        "source_catalog_sha256": "403311883a71a012eff139008f70a0e16daa03c065e3cac79dbd416994ff9c1d",
         "source_dataset": "Renato-R-V/hspace-datasets",
-        "source_files": "{\"dem\": \"tierra/NASADEM_tierra_1grado.tif\", \"ghi\": \"tierra/GHI_tierra.tif\", \"albedo\": \"tierra/Albedo_tierra.tif\", \"mascaras\": \"tierra/Fracciones_mascaras_tierra_MODIS_2021_1grado.tif\"}",
-        "source_revision": "7ba36b3776cbd487e0ce444e4124d82e5a02784a",
+        "source_files": "{\"dem\": \"tierra/NASADEM_tierra_1grado.tif\", \"ghi\": \"tierra/GHI_tierra.tif\", \"albedo\": \"tierra/Albedo_tierra.tif\", \"mascaras\": \"tierra/Fracciones_mascaras_tierra_MODIS_2021_1grado.tif\", \"vegetacion\": \"tierra/Vegetacion_tierra_MOD44B_2021_1grado.tif\"}",
+        "source_revision": "750ea954c9ec08674ee4e53bbeae7fb080813933",
         "unknown_note": "NaN remains unknown; zero coverage is a valid fraction",
+        "vegetation_cycle_year": "2021",
+        "vegetation_native_resolution": "0.5 degree CMG; not 15 arcsec",
+        "vegetation_period_end": "2022-03-04",
+        "vegetation_period_start": "2021-03-05",
+        "vegetation_quantity": "vegetated_surface_fraction",
+        "vegetation_scope_note": "Mean over valid MOD44B retrievals, not necessarily full CMG cell area; vegetation data coverage counts known CMG cells, not within-cell retrieval quality",
+        "AREA_OR_POINT": "Area"
+      },
+      "git_blob_sha1": "00b05461e128a1241ed4a4b8dda2789006a66dd7"
+    },
+    "Vegetacion_tierra_MOD44B_2021_0p5grado.tif": {
+      "archivo": "tierra/Vegetacion_tierra_MOD44B_2021_0p5grado.tif",
+      "bytes": 149133,
+      "sha256": "8733a3727bcc26acb190c76a16e93f3189aab79d591b2d863400ae9c8470ddf7",
+      "crs": "EPSG:4326",
+      "dimensiones": [
+        720,
+        360
+      ],
+      "geotransform": [
+        -180.0,
+        0.5,
+        0.0,
+        90.0,
+        0.0,
+        -0.5
+      ],
+      "tipo": [
+        "float32"
+      ],
+      "nodata": "NaN",
+      "bandas": [
+        {
+          "banda": 1,
+          "nombre": "Cobertura vegetal; proporción de superficie vegetada",
+          "unidad": "proporción de superficie vegetada",
+          "validos": 65474,
+          "min": 0.0,
+          "max": 0.9900000095367432,
+          "media": 0.5187914283502301,
+          "tags": {
+            "denominator": "Valid MOD44B retrieval surfaces; CMG means are not necessarily full-cell-area fractions",
+            "interpretation": "0=no vegetation; 1=fully vegetated within valid retrieved surface",
+            "quantity": "vegetated_surface_fraction",
+            "units": "1",
+            "valid_range": "0..1"
+          }
+        }
+      ],
+      "tags": {
+        "aggregation": "Original 0.5 degree CMG values",
+        "attribution": "DiMiceli et al., MOD44B.061, doi:10.5067/MODIS/MOD44B.061; globally gridded by ICDC, CEN, University of Hamburg, doi:10.25592/uhhfdm.11195; Thanks to ICDC for data support",
+        "crs_note": "Source CF geographic degree coordinates; WGS84 chosen for project angular grid; no resampling of native CMG",
+        "formula": "(100 - novegetationfraction) / 100; Float32; no min-max normalization",
+        "license": "CC-BY-4.0",
+        "license_url": "https://creativecommons.org/licenses/by/4.0/",
+        "missing_note": "Source fill127 and unknown ocean/ice remain NaN; unknown is not zero vegetation",
+        "precision_note": "Source integer percentages; step0.01, not measurement accuracy; actual maximum need not reach1",
+        "quality_note": "Positive useful observation count required; all ICDC supplied quality levels retained, no additional cloud-quality threshold",
+        "quantity": "vegetated_surface_fraction",
+        "source": "https://icdc.cen.uni-hamburg.de/thredds/fileServer/ftpthredds/modis_vcf/global_0.5deg/MODIS-TERRA_C6.1__MOD44B__ForestCoverFraction__LPDAAC__GLOBAL__0.5degree__UHAM-ICDC__20210306__fv0.01.nc",
+        "source_cycle_year": "2021",
+        "source_page": "https://www.geo.uni-hamburg.de/en/service/icdc/data/land/modis-vcf-forest.html",
+        "source_parameter": "novegetationfraction",
+        "source_period_end": "2022-03-04",
+        "source_period_start": "2021-03-05",
+        "source_scope_note": "ICDC fractions are means over valid 250m MOD44B retrievals, not necessarily the entire CMG cell surface; summary band2 counts known CMG cells, not within-cell retrieval coverage or QA",
+        "source_sha256": "4894a7655cb15bedd0d7285d1b51b01d09b24f89642ba67f7dff0211ac372cef",
+        "source_spatial_resolution": "0.5 degree ICDC CMG; original MOD44B retrievals at 250 m",
+        "AREA_OR_POINT": "Area"
+      }
+    },
+    "Vegetacion_tierra_MOD44B_2021_1grado.tif": {
+      "archivo": "tierra/Vegetacion_tierra_MOD44B_2021_1grado.tif",
+      "bytes": 71050,
+      "sha256": "368c58811f82c1de17378060f2174544e8d049185f514bc1e9f85a493a7418a7",
+      "crs": "EPSG:4326",
+      "dimensiones": [
+        360,
+        180
+      ],
+      "geotransform": [
+        -180.0,
+        1.0,
+        0.0,
+        90.0,
+        0.0,
+        -1.0
+      ],
+      "tipo": [
+        "float32",
+        "float32"
+      ],
+      "nodata": "NaN",
+      "bandas": [
+        {
+          "banda": 1,
+          "nombre": "Cobertura vegetal; proporción de superficie vegetada",
+          "unidad": "proporción de superficie vegetada",
+          "validos": 17673,
+          "min": 0.0,
+          "max": 0.9900000095367432,
+          "media": 0.5219731602607195,
+          "tags": {
+            "denominator": "Valid MOD44B retrieval surfaces; CMG means are not necessarily full-cell-area fractions",
+            "interpretation": "0=no vegetation; 1=fully vegetated within valid retrieved surface",
+            "quantity": "vegetated_surface_fraction",
+            "units": "1",
+            "valid_range": "0..1"
+          }
+        },
+        {
+          "banda": 2,
+          "nombre": "Cobertura de datos de vegetación",
+          "unidad": "fracción de celdas fuente válidas",
+          "validos": 64800,
+          "min": 0.0,
+          "max": 1.0,
+          "media": 0.2526003086419753,
+          "tags": {
+            "denominator": "4 potential 0.5 degree source cells; not vegetation cover",
+            "quantity": "valid_source_cell_fraction",
+            "units": "1"
+          }
+        }
+      ],
+      "tags": {
+        "aggregation": "Mean of available 2x2 CMG cells; band2=count(valid)/4; not geodesic area weighting",
+        "attribution": "DiMiceli et al., MOD44B.061, doi:10.5067/MODIS/MOD44B.061; globally gridded by ICDC, CEN, University of Hamburg, doi:10.25592/uhhfdm.11195; Thanks to ICDC for data support",
+        "crs_note": "Source CF geographic degree coordinates; WGS84 chosen for project angular grid; no resampling of native CMG",
+        "formula": "(100 - novegetationfraction) / 100; Float32; no min-max normalization",
+        "license": "CC-BY-4.0",
+        "license_url": "https://creativecommons.org/licenses/by/4.0/",
+        "missing_note": "Source fill127 and unknown ocean/ice remain NaN; unknown is not zero vegetation",
+        "precision_note": "Source integer percentages; step0.01, not measurement accuracy; actual maximum need not reach1",
+        "quality_note": "Positive useful observation count required; all ICDC supplied quality levels retained, no additional cloud-quality threshold",
+        "quantity": "vegetated_surface_fraction",
+        "source": "https://icdc.cen.uni-hamburg.de/thredds/fileServer/ftpthredds/modis_vcf/global_0.5deg/MODIS-TERRA_C6.1__MOD44B__ForestCoverFraction__LPDAAC__GLOBAL__0.5degree__UHAM-ICDC__20210306__fv0.01.nc",
+        "source_cycle_year": "2021",
+        "source_page": "https://www.geo.uni-hamburg.de/en/service/icdc/data/land/modis-vcf-forest.html",
+        "source_parameter": "novegetationfraction",
+        "source_period_end": "2022-03-04",
+        "source_period_start": "2021-03-05",
+        "source_scope_note": "ICDC fractions are means over valid 250m MOD44B retrievals, not necessarily the entire CMG cell surface; summary band2 counts known CMG cells, not within-cell retrieval coverage or QA",
+        "source_sha256": "4894a7655cb15bedd0d7285d1b51b01d09b24f89642ba67f7dff0211ac372cef",
+        "source_spatial_resolution": "0.5 degree ICDC CMG; original MOD44B retrievals at 250 m",
         "AREA_OR_POINT": "Area"
       }
     }
   },
-  "actualizacion_utc": "2026-11-11T15:41:54.548492+00:00",
+  "actualizacion_utc": "2026-11-11T19:35:13.414256+00:00",
   "notas": [
     "15 segundos de arco equivalen a unos 464 m en el ecuador; ancho este-oeste decrece con la latitud.",
     "GHI y albedo POWER son nativos a 1 grado; no tienen resolución local de 464 m.",
+    "Cobertura vegetal física MOD44B/ICDC: 0..1, malla fuente 0.5 grados y resumen a 1 grado; distinta de los códigos de máscara IGBP.",
     "Las capas mantienen fechas y definiciones físicas diferentes; consultar documentación por producto."
   ]
 }

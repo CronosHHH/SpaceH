@@ -1,0 +1,125 @@
+{
+  "fecha_utc": "2026-11-11T19:26:53.600656+00:00",
+  "validado": true,
+  "cantidad": "vegetated_surface_fraction",
+  "fuente": "https://icdc.cen.uni-hamburg.de/thredds/fileServer/ftpthredds/modis_vcf/global_0.5deg/MODIS-TERRA_C6.1__MOD44B__ForestCoverFraction__LPDAAC__GLOBAL__0.5degree__UHAM-ICDC__20210306__fv0.01.nc",
+  "pagina_fuente": "https://www.geo.uni-hamburg.de/en/service/icdc/data/land/modis-vcf-forest.html",
+  "sha256_fuente": "4894a7655cb15bedd0d7285d1b51b01d09b24f89642ba67f7dff0211ac372cef",
+  "periodo": [
+    "2021-03-05",
+    "2022-03-04"
+  ],
+  "metadatos_fuente": {
+    "lat#long_name": "latitude coordinate",
+    "lat#standard_name": "latitude",
+    "lat#units": "degrees_north",
+    "lon#long_name": "longitude coordinate",
+    "lon#standard_name": "longitude",
+    "lon#units": "degrees_east",
+    "NC_GLOBAL#cdm_data_type": "Equirectangular, Climate Modeling Grid (CMG)",
+    "NC_GLOBAL#citation": "Globally gridded MODIS-TERRA Collection C6.1 Forest and Vegetation Cover Fraction at 0.5 resolution derived at ICDC (https://www.cen.uni-hamburg.de/icdc) based on DiMiceli, C., Sohlberg, R., Townsend, J. (2022) MODIS/Terra Vegetation Continuous Fields Yearly L3 Global 250m SIN Grid V061, NASA EOSDIS Land Processes DAAC, https://doi.org/10.5067/MODIS/MOD44B.061, last access: November 1, 2022",
+    "NC_GLOBAL#comment": "Latitude and longitude coordinates per grid cell of the input tiles were computed at UHH based on the work of Benjamin Bechtel, benjamin.bechtel@uni-hamburg.de",
+    "NC_GLOBAL#Conventions": "CF-1.6",
+    "NC_GLOBAL#creator_email": "stefan.kern (at) uni-hamburg.de",
+    "NC_GLOBAL#creator_name": "Integrated Climate Data Center (ICDC)",
+    "NC_GLOBAL#creator_url": "https://www.cen.uni-hamburg.de/icdc",
+    "NC_GLOBAL#date_created": "Fri Dec  2 14:29:35 2022",
+    "NC_GLOBAL#EndDate": "2022-03-05",
+    "NC_GLOBAL#EndYear": "2021",
+    "NC_GLOBAL#geographic_region": "global",
+    "NC_GLOBAL#geospatial_lat_max": "89.7500",
+    "NC_GLOBAL#geospatial_lat_min": "-89.7500",
+    "NC_GLOBAL#geospatial_lat_resolution": "0.5",
+    "NC_GLOBAL#geospatial_lon_max": "179.750",
+    "NC_GLOBAL#geospatial_lon_min": "-179.750",
+    "NC_GLOBAL#geospatial_lon_resolution": "0.5",
+    "NC_GLOBAL#institution": "Center for Earth System Research and Sustainability (CEN), Integrated Climate Data Center, University of Hamburg",
+    "NC_GLOBAL#Period": "2000-2021",
+    "NC_GLOBAL#platform": "EOS-TERRA",
+    "NC_GLOBAL#references": "[1] https://lpdaac.usgs.gov/products/mod44bv061/; [2] User Guide: https://lpdaac.usgs.gov/documents/1494/MOD44B_User_Guide_V61.pdf; [3] Algorithm Theoretical Basis Document (ATBD): https://lpdaac.usgs.gov/documents/113/MOD44B_ATBD.pdf (Note: This is a very old version from 1999)",
+    "NC_GLOBAL#sensor": "MODIS",
+    "NC_GLOBAL#source": "https://lpdaac.usgs.gov/products/mod44bv061/; https://e4ftl01.cr.usgs.gov/MOLT/MOD44B.061/",
+    "NC_GLOBAL#standard_name_vocabulary": "NetCDF Climate and Forecast (CF) Metadata Convention",
+    "NC_GLOBAL#StartDate": "2000-03-05",
+    "NC_GLOBAL#StartYear": "2000",
+    "NC_GLOBAL#summary": "From FCF, VCF and non-vegetated land cover fraction data on the MODIS sinusoidal grid at 250 m grid resolution global maps are computed; these contain the grid-cell mean fraction of FCF, VCF or non-vegetated land cover fractions, the variance of these parameter in the grid cell (based on the 250m pixels) and the grid-cell mean retrieval standard deviation are computed. Two additional layers provide the number of valid 250 m pixel values per grid cell. Another three additional layers provide a grid-cell mean quality flag: the smaller the better, and the fractions of the most and second-most encountered quality flag.",
+    "NC_GLOBAL#time_coverage_duration": "P22Y",
+    "NC_GLOBAL#time_coverage_end": "2022-03-04",
+    "NC_GLOBAL#time_coverage_resolution": "P1A",
+    "NC_GLOBAL#time_coverage_start": "2021-03-05",
+    "NC_GLOBAL#title": "MODIS-TERRA Collection 6.1 annual Forest and Vegetation Cover Fraction (FCF and VCF) from LPDAAC: https://lpdaac.usgs.gov/products/mod44bv061/ gridded from sinusoidal grid into an equi-rectangular (Climate Modeling Grid) grid",
+    "NETCDF_DIM_EXTRA": "{time}",
+    "NETCDF_DIM_time_DEF": "{1,6}",
+    "NETCDF_DIM_time_VALUES": "7852",
+    "novegetationfraction#comment": "This is the mean per grid cell fraction without vegetation",
+    "novegetationfraction#coordinates": "lat lon time",
+    "novegetationfraction#long_name": "Non-Vegetated Land Cover Fraction",
+    "novegetationfraction#missing_value": "127",
+    "novegetationfraction#units": "percent",
+    "novegetationfraction#valid_max": "100",
+    "novegetationfraction#valid_min": "0",
+    "novegetationfraction#_FillValue": "127",
+    "time#standard_name": "time",
+    "time#units": "days since 2000-01-01"
+  },
+  "atributos_variable": {
+    "NETCDF_VARNAME": "novegetationfraction",
+    "long_name": "Non-Vegetated Land Cover Fraction",
+    "units": "percent",
+    "missing_value": "127",
+    "_FillValue": "127",
+    "valid_min": "0",
+    "valid_max": "100",
+    "coordinates": "lat lon time",
+    "comment": "This is the mean per grid cell fraction without vegetation",
+    "NETCDF_DIM_time": "7852"
+  },
+  "crs_salida": "EPSG:4326",
+  "resolucion_nativa_grados": 0.5,
+  "formula": "(100 - novegetationfraction) / 100",
+  "validos_nativos": 65474,
+  "nodata_nativos": 193726,
+  "min": 0.0,
+  "max": 0.9900000095367432,
+  "niveles_nativos": 100,
+  "paso_porcentaje_origen": 1,
+  "cierre_componentes_error_max_puntos_porcentuales": 1.0,
+  "celdas_1grado_validas": 17673,
+  "error_agregacion_independiente_max": 0.0,
+  "controles_espaciales": {
+    "Sahara": {
+      "lon": 16,
+      "lat": 25,
+      "valor": 0.0
+    },
+    "Amazonia": {
+      "lon": -64,
+      "lat": -4,
+      "valor": 0.9100000262260437
+    },
+    "Atlantico": {
+      "lon": -30,
+      "lat": 0,
+      "valor": null
+    },
+    "Antartida": {
+      "lon": 0,
+      "lat": -80,
+      "valor": null
+    }
+  },
+  "valores_y_nodata_conservados": true,
+  "cobertura_datos_no_equivale_a_vegetacion": true,
+  "productos": [
+    {
+      "archivo": "Vegetacion_tierra_MOD44B_2021_0p5grado.tif",
+      "sha256": "8733a3727bcc26acb190c76a16e93f3189aab79d591b2d863400ae9c8470ddf7",
+      "bytes": 149133
+    },
+    {
+      "archivo": "Vegetacion_tierra_MOD44B_2021_1grado.tif",
+      "sha256": "368c58811f82c1de17378060f2174544e8d049185f514bc1e9f85a493a7418a7",
+      "bytes": 71050
+    }
+  ]
+}

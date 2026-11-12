@@ -60,6 +60,11 @@ calculado desde los centros de los píxeles originales, cuyo origen real es
 | 10 | Agua de suplemento oceánico: bits 2 + 8 |
 | 255 | NoData / desconocido |
 
+Para obtener una **proporción física de superficie vegetada entre 0 y 1**, se
+utiliza el [producto MOD44B de cobertura vegetal](./vegetacion.md), que alimenta
+la sexta banda del cubo y el notebook. El bit 4 y la antigua fracción IGBP
+continúan describiendo clases de suelo, no cobertura biofísica subpíxel.
+
 Puede utilizarse como máscara categórica o mediante bits, comprobando primero
 NoData. **No se deben promediar directamente sus códigos numéricos.**
 
@@ -123,5 +128,6 @@ marte/.venv/bin/python tierra/origen_ds_mascaras/generar_mascaras.py
 
 `--fuentes`, `--salida` y `--informe` permiten cambiar las rutas. Por defecto los
 TIFF se generan en `/tmp/hspace_tierra_productos`; el script no publica ni
-elimina productos. El notebook trabaja con la versión de fracciones a 1° para
-evitar descargar la máscara detallada completa durante la exploración global.
+elimina productos. El notebook utiliza las fracciones de ciudades y agua a 1°;
+la vegetación cuantitativa procede del resumen MOD44B separado. Así se evita
+descargar la máscara detallada completa durante la exploración global.
